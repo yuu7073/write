@@ -7,47 +7,61 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body.theme-ivory{--bg:#F2ECEC;--bg2:#FFFFFF;--bg3:#EBE3E3;--text:#1C1214;--text2:#7A5E64;--text3:#B8A0A6;--border:#DDD0D2;--border2:#E8DEDE;--card:#FFFFFF;--input-bg:#FFFFFF;--accent:#E05A29;--accent-dark:#B04018;--accent-bg:#FBE8DF;--accent-text:#B04018;--btn-bg:#E05A29;--btn-hover:#B84420;--tag-bg:#FBE8DF;--tag-text:#B04018;--pov-bg:#EBE3E3;--pov-text:#7A5E64;--pov-active-bg:#F5C9B2;--pov-active-text:#8B3018;--divider:#E0D4D4;--key-ok:#2E7D32;--disabled:#C8B8BA;--err-bg:#FFF0EE;--err-border:#F5B8A8;--err-text:#A32D2D;--copied:#2E7D32;--copied-border:#66BB6A;--dot:#E05A29;--nav-bg:#1C1214;--nav-text:#706050;--nav-active-bg:#2A1A0E;--nav-active-text:#FF9955;--nav-border:#2A2825}
+body.theme-white{--bg:#F5F5F5;--bg2:#FFFFFF;--bg3:#EEEEEE;--text:#132436;--text2:#4A6070;--text3:#9AB0BC;--border:#D8E2E8;--border2:#E5ECEF;--card:#FFFFFF;--input-bg:#FFFFFF;--accent:#132436;--accent-dark:#0A1520;--accent-bg:#E8EDF2;--accent-text:#132436;--btn-bg:#132436;--btn-hover:#0A1520;--tag-bg:#E8EDF2;--tag-text:#132436;--pov-bg:#EEF2F5;--pov-text:#4A6070;--pov-active-bg:#C8D4DE;--pov-active-text:#0A1520;--divider:#E0E8EC;--key-ok:#1B6B3A;--disabled:#B0C0C8;--err-bg:#FFF5F5;--err-border:#FFCDD2;--err-text:#C62828;--copied:#1B6B3A;--copied-border:#4CAF50;--dot:#9C90FC;--nav-bg:#132436;--nav-text:#4A6070;--nav-active-bg:#1E2050;--nav-active-text:#BEB4FF;--nav-border:#1C3148}
+body.theme-dark{--bg:#0E0E0E;--bg2:#1A1A1A;--bg3:#242424;--text:#F0EDE8;--text2:#A09890;--text3:#605850;--border:#2E2C2A;--border2:#242220;--card:#1A1A1A;--input-bg:#1A1A1A;--accent:#FE7733;--accent-dark:#FF9955;--accent-bg:#2A1A0E;--accent-text:#FF9955;--btn-bg:#FE7733;--btn-hover:#E05A18;--tag-bg:#2A1A0E;--tag-text:#FF9955;--pov-bg:#242220;--pov-text:#907870;--pov-active-bg:#3A200A;--pov-active-text:#FFBB88;--divider:#242220;--key-ok:#66BB6A;--disabled:#3A3630;--err-bg:#2A1010;--err-border:#6B2020;--err-text:#FF8A80;--copied:#66BB6A;--copied-border:#388E3C;--dot:#FE7733;--nav-bg:#0A0A0A;--nav-text:#504840;--nav-active-bg:#2A1A0E;--nav-active-text:#FE7733;--nav-border:#1A1A1A}
+body.theme-blush{--bg:#132436;--bg2:#1C3148;--bg3:#243D58;--text:#EEF2F8;--text2:#8AACCB;--text3:#4A7090;--border:#2A4A68;--border2:#243D58;--card:#1C3148;--input-bg:#1C3148;--accent:#9C90FC;--accent-dark:#BEB4FF;--accent-bg:#1E2050;--accent-text:#BEB4FF;--btn-bg:#4A44C8;--btn-hover:#6058E0;--tag-bg:#1E2050;--tag-text:#BEB4FF;--pov-bg:#1A3050;--pov-text:#6A98B8;--pov-active-bg:#2A2870;--pov-active-text:#D0C8FF;--divider:#1E3450;--key-ok:#80CBC4;--disabled:#2A4460;--err-bg:#2A1018;--err-border:#6B2030;--err-text:#FF8A90;--copied:#80CBC4;--copied-border:#4DB6AC;--dot:#9C90FC;--nav-bg:#0D1C2A;--nav-text:#3A5870;--nav-active-bg:#1E2050;--nav-active-text:#BEB4FF;--nav-border:#1C3148}
 
-/* ── Themes ── */
-body.theme-ivory{--bg:#F2ECEC;--bg2:#FFFFFF;--bg3:#EBE3E3;--text:#1C1214;--text2:#7A5E64;--text3:#B8A0A6;--border:#DDD0D2;--border2:#E8DEDE;--card:#FFFFFF;--input-bg:#FFFFFF;--accent:#E05A29;--accent-dark:#B04018;--accent-bg:#FBE8DF;--accent-text:#B04018;--btn-bg:#E05A29;--btn-hover:#B84420;--tag-bg:#FBE8DF;--tag-text:#B04018;--pov-bg:#EBE3E3;--pov-text:#7A5E64;--pov-active-bg:#F5C9B2;--pov-active-text:#8B3018;--divider:#E0D4D4;--key-ok:#2E7D32;--disabled:#C8B8BA;--err-bg:#FFF0EE;--err-border:#F5B8A8;--err-text:#A32D2D;--copied:#2E7D32;--copied-border:#66BB6A;--dot:#E05A29}
-body.theme-white{--bg:#F5F5F5;--bg2:#FFFFFF;--bg3:#EEEEEE;--text:#132436;--text2:#4A6070;--text3:#9AB0BC;--border:#D8E2E8;--border2:#E5ECEF;--card:#FFFFFF;--input-bg:#FFFFFF;--accent:#132436;--accent-dark:#0A1520;--accent-bg:#E8EDF2;--accent-text:#132436;--btn-bg:#132436;--btn-hover:#0A1520;--tag-bg:#E8EDF2;--tag-text:#132436;--pov-bg:#EEF2F5;--pov-text:#4A6070;--pov-active-bg:#C8D4DE;--pov-active-text:#0A1520;--divider:#E0E8EC;--key-ok:#1B6B3A;--disabled:#B0C0C8;--err-bg:#FFF5F5;--err-border:#FFCDD2;--err-text:#C62828;--copied:#1B6B3A;--copied-border:#4CAF50;--dot:#9C90FC}
-body.theme-dark{--bg:#0E0E0E;--bg2:#1A1A1A;--bg3:#242424;--text:#F0EDE8;--text2:#A09890;--text3:#605850;--border:#2E2C2A;--border2:#242220;--card:#1A1A1A;--input-bg:#1A1A1A;--accent:#FE7733;--accent-dark:#FF9955;--accent-bg:#2A1A0E;--accent-text:#FF9955;--btn-bg:#FE7733;--btn-hover:#E05A18;--tag-bg:#2A1A0E;--tag-text:#FF9955;--pov-bg:#242220;--pov-text:#907870;--pov-active-bg:#3A200A;--pov-active-text:#FFBB88;--divider:#242220;--key-ok:#66BB6A;--disabled:#3A3630;--err-bg:#2A1010;--err-border:#6B2020;--err-text:#FF8A80;--copied:#66BB6A;--copied-border:#388E3C;--dot:#FE7733}
-body.theme-blush{--bg:#132436;--bg2:#1C3148;--bg3:#243D58;--text:#EEF2F8;--text2:#8AACCB;--text3:#4A7090;--border:#2A4A68;--border2:#243D58;--card:#1C3148;--input-bg:#1C3148;--accent:#9C90FC;--accent-dark:#BEB4FF;--accent-bg:#1E2050;--accent-text:#BEB4FF;--btn-bg:#4A44C8;--btn-hover:#6058E0;--tag-bg:#1E2050;--tag-text:#BEB4FF;--pov-bg:#1A3050;--pov-text:#6A98B8;--pov-active-bg:#2A2870;--pov-active-text:#D0C8FF;--divider:#1E3450;--key-ok:#80CBC4;--disabled:#2A4460;--err-bg:#2A1018;--err-border:#6B2030;--err-text:#FF8A90;--copied:#80CBC4;--copied-border:#4DB6AC;--dot:#9C90FC}
+.pw-overlay{position:fixed;inset:0;background:var(--bg,#F2ECEC);z-index:9999;display:flex;align-items:center;justify-content:center;transition:opacity .3s}
+.pw-overlay.hide{opacity:0;pointer-events:none}
+.pw-box{width:320px;padding:2.5rem 2rem;background:var(--bg2,#fff);border:1px solid var(--border2,#E8DEDE);border-radius:16px;text-align:center}
+.pw-logo{width:10px;height:10px;border-radius:50%;background:#E05A29;margin:0 auto 1.2rem}
+.pw-title{font-family:'Noto Serif TC',serif;font-size:18px;font-weight:600;color:var(--text,#1C1214);margin-bottom:.4rem}
+.pw-sub{font-size:13px;color:var(--text2,#7A5E64);margin-bottom:1.5rem}
+.pw-input{width:100%;border:1px solid var(--border,#DDD0D2);border-radius:10px;padding:11px 14px;font-family:'Noto Sans TC',sans-serif;font-size:15px;color:var(--text,#1C1214);background:var(--input-bg,#fff);outline:none;text-align:center;letter-spacing:.2em;margin-bottom:10px}
+.pw-input:focus{border-color:#E05A29}
+.pw-btn{width:100%;padding:12px;border-radius:10px;border:none;background:#E05A29;color:white;font-family:'Noto Sans TC',sans-serif;font-size:14px;font-weight:500;cursor:pointer}
+.pw-err{font-size:12px;color:#A32D2D;margin-top:8px;min-height:16px}
 
 body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding:0;transition:background .3s,color .3s;display:flex}
 
-/* ── Sidebar ── */
-.sidebar{width:240px;min-width:240px;height:100vh;position:sticky;top:0;background:var(--bg2);border-right:1px solid var(--border2);display:flex;flex-direction:column;overflow:hidden;transition:background .3s}
-.sidebar-header{display:flex;align-items:center;justify-content:space-between;padding:1.5rem 1rem 1rem;border-bottom:1px solid var(--border2);flex-shrink:0}
-.sidebar-title{font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--text2)}
-.sidebar-clear{font-size:11px;color:var(--text3);background:none;border:none;cursor:pointer;font-family:'Noto Sans TC',sans-serif;padding:2px 6px;border-radius:4px;transition:color .15s}
-.sidebar-clear:hover{color:var(--accent)}
-.sidebar-list{flex:1;overflow-y:auto;padding:.5rem 0}
-.sidebar-list::-webkit-scrollbar{width:3px}
-.sidebar-list::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
-.sidebar-empty{font-size:13px;color:var(--text3);text-align:center;padding:2rem 1rem}
-.sidebar-item{padding:10px 14px;cursor:pointer;border-bottom:1px solid var(--border2);transition:background .12s}
-.sidebar-item:hover{background:var(--bg3)}
-.sidebar-item.active-item{background:var(--accent-bg)}
-.sidebar-item-meta{display:flex;align-items:center;gap:6px;margin-bottom:4px}
-.sidebar-item-tag{font-size:10px;font-weight:500;color:var(--accent-text);background:var(--accent-bg);padding:1px 7px;border-radius:999px}
-.sidebar-item-time{font-size:10px;color:var(--text3)}
-.sidebar-item-preview{font-size:12px;color:var(--text2);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.leftnav{width:200px;min-width:200px;height:100vh;position:sticky;top:0;background:var(--nav-bg);display:flex;flex-direction:column;overflow:hidden}
+.nav-logo{padding:18px 16px 14px;border-bottom:1px solid var(--nav-border)}
+.nav-logo-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block;margin-right:6px}
+.nav-logo-text{font-family:'Noto Serif TC',serif;font-size:13px;color:#E0D8D0;font-weight:600}
+.nav-logo-sub{font-size:10px;color:#444;margin-top:3px;padding-left:14px}
+.nav-sec-lbl{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#444;padding:12px 16px 4px}
+.nav-item{display:flex;align-items:center;gap:8px;padding:10px 16px;cursor:pointer;transition:background .12s;border-left:2px solid transparent}
+.nav-item:hover{background:rgba(255,255,255,.05)}
+.nav-item.active{background:var(--nav-active-bg);border-left-color:var(--accent)}
+.nav-icon{font-size:14px;width:18px;text-align:center;flex-shrink:0}
+.nav-text{font-size:12px;color:var(--nav-text)}
+.nav-item.active .nav-text{color:var(--nav-active-text);font-weight:500}
+.nav-badge{font-size:9px;background:var(--accent);color:white;padding:1px 5px;border-radius:999px;margin-left:auto;flex-shrink:0}
+.nav-divider{height:1px;background:var(--nav-border);margin:4px 0}
+.nav-hist-wrap{flex:1;overflow-y:auto;padding:8px 0}
+.nav-hist-wrap::-webkit-scrollbar{width:2px}
+.nav-hist-wrap::-webkit-scrollbar-thumb{background:#333;border-radius:2px}
+.nav-hist-lbl{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#444;padding:0 16px;margin-bottom:4px}
+.nav-hist-item{padding:7px 16px;cursor:pointer;transition:background .12s;border-bottom:1px solid var(--nav-border)}
+.nav-hist-item:hover{background:rgba(255,255,255,.05)}
+.nav-hist-item.active-item{background:var(--nav-active-bg)}
+.nav-hist-tag{font-size:9px;color:var(--accent);margin-bottom:2px}
+.nav-hist-preview{font-size:11px;color:#555;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav-hist-clear{font-size:10px;color:#444;background:none;border:none;cursor:pointer;font-family:'Noto Sans TC',sans-serif;padding:2px 6px;border-radius:4px;display:block;margin:4px 16px}
+.nav-hist-clear:hover{color:var(--accent)}
 
-.sidebar-toggle{display:none;position:fixed;bottom:1.5rem;right:1.5rem;z-index:100;background:var(--btn-bg);color:white;border:none;border-radius:999px;padding:10px 20px;font-family:'Noto Sans TC',sans-serif;font-size:13px;cursor:pointer}
+.nav-toggle{display:none;position:fixed;bottom:1.5rem;right:1.5rem;z-index:100;background:var(--btn-bg);color:white;border:none;border-radius:999px;padding:10px 18px;font-family:'Noto Sans TC',sans-serif;font-size:13px;cursor:pointer}
 .main-wrap{flex:1;min-width:0;padding:2rem 2rem 4rem;overflow-y:auto}
-.container{max-width:680px;margin:0 auto}
+.container{max-width:700px;margin:0 auto}
 
-/* ── Header ── */
-.header{display:flex;align-items:center;gap:12px;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border2)}
-.header-left{display:flex;align-items:center;gap:12px;flex:1}
+.header{display:flex;align-items:center;gap:12px;margin-bottom:1.75rem;padding-bottom:1.25rem;border-bottom:1px solid var(--border2)}
+.header-left{display:flex;align-items:center;gap:10px;flex:1}
 .logo-dot{width:10px;height:10px;border-radius:50%;background:var(--accent);flex-shrink:0}
-.header-title{font-family:'Noto Serif TC',serif;font-size:20px;font-weight:600;letter-spacing:.04em;color:var(--text)}
-.header-sub{font-size:13px;color:var(--text2);margin-top:2px}
-
-/* ── Theme swatches ── */
-.theme-switcher{display:flex;gap:7px;align-items:center;flex-shrink:0}
-.theme-swatch{width:22px;height:22px;border-radius:50%;cursor:pointer;border:2px solid transparent;transition:border-color .15s,transform .15s;flex-shrink:0}
+.header-title{font-family:'Noto Serif TC',serif;font-size:18px;font-weight:600;letter-spacing:.04em;color:var(--text)}
+.header-sub{font-size:12px;color:var(--text2);margin-top:2px}
+.theme-switcher{display:flex;gap:6px;align-items:center;flex-shrink:0}
+.theme-swatch{width:20px;height:20px;border-radius:50%;cursor:pointer;border:2px solid transparent;transition:border-color .15s,transform .15s;flex-shrink:0}
 .theme-swatch:hover{transform:scale(1.15)}
 .theme-swatch.active{border-color:var(--accent)}
 .swatch-ivory{background:#F2ECEC;box-shadow:inset 0 0 0 1px #DDD0D2}
@@ -55,40 +69,66 @@ body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--text
 .swatch-dark{background:#0E0E0E;box-shadow:inset 0 0 0 1px #FE7733}
 .swatch-blush{background:#132436;box-shadow:inset 0 0 0 1px #9C90FC}
 
-/* ── Form elements ── */
+.mod-panel{display:none}
+.mod-panel.show{display:block}
+
 .section-label{font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--text2);margin-bottom:10px}
-.form-block{margin-bottom:1.5rem}
-.pill-group{display:flex;flex-wrap:wrap;gap:8px}
-.pill{padding:7px 16px;border-radius:999px;border:1px solid var(--border);font-size:13px;cursor:pointer;background:var(--bg2);color:var(--text2);font-family:'Noto Sans TC',sans-serif;transition:all .15s}
+.form-block{margin-bottom:1.4rem}
+.pill-group{display:flex;flex-wrap:wrap;gap:7px}
+.pill{padding:6px 14px;border-radius:999px;border:1px solid var(--border);font-size:13px;cursor:pointer;background:var(--bg2);color:var(--text2);font-family:'Noto Sans TC',sans-serif;transition:all .15s}
 .pill:hover{border-color:var(--accent);color:var(--accent)}
 .pill.active{background:var(--accent-bg);border-color:var(--accent);color:var(--accent-text);font-weight:500}
 input[type=text],input[type=password],textarea,select{width:100%;border:1px solid var(--border);border-radius:10px;padding:11px 14px;font-family:'Noto Sans TC',sans-serif;font-size:14px;color:var(--text);background:var(--input-bg);transition:border-color .15s;outline:none;line-height:1.6}
 textarea{resize:none}
 input:focus,textarea:focus,select:focus{border-color:var(--accent)}
 select option{background:var(--bg2);color:var(--text)}
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .char-count{font-size:11px;color:var(--text3);text-align:right;margin-top:5px}
 .tone-hint{font-size:12px;color:var(--text3);margin-top:7px}
 
-/* ── Voice cards ── */
-.voice-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.voice-card{border:1px solid var(--border);border-radius:12px;padding:14px 16px;cursor:pointer;background:var(--bg2);transition:all .15s;text-align:left}
+.voice-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.voice-card{border:1px solid var(--border);border-radius:10px;padding:12px 14px;cursor:pointer;background:var(--bg2);transition:all .15s;text-align:left}
 .voice-card:hover{border-color:var(--accent)}
 .voice-card.active{background:var(--accent-bg);border-color:var(--accent)}
-.voice-card-title{font-size:14px;font-weight:500;color:var(--text);margin-bottom:3px}
+.voice-card-title{font-size:13px;font-weight:500;color:var(--text);margin-bottom:2px}
 .voice-card.active .voice-card-title{color:var(--accent-text)}
-.voice-card-sub{font-size:12px;color:var(--text2);line-height:1.5}
-.voice-card.active .voice-card-sub{color:var(--accent-dark)}
-.voice-pov{display:inline-block;font-size:10px;font-weight:500;letter-spacing:.05em;padding:2px 8px;border-radius:999px;margin-bottom:6px;background:var(--pov-bg);color:var(--pov-text)}
+.voice-card-sub{font-size:11px;color:var(--text2);line-height:1.4}
+.voice-pov{display:inline-block;font-size:10px;font-weight:500;padding:2px 7px;border-radius:999px;margin-bottom:5px;background:var(--pov-bg);color:var(--pov-text)}
 .voice-card.active .voice-pov{background:var(--pov-active-bg);color:var(--pov-active-text)}
 
-/* ── API Key ── */
-.key-block{overflow:hidden;transition:max-height .4s ease,opacity .3s ease,margin .4s ease}
+.audience-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.aud-card{border:1px solid var(--border);border-radius:10px;padding:10px 12px;cursor:pointer;background:var(--bg2);transition:all .15s;text-align:left}
+.aud-card:hover{border-color:var(--accent)}
+.aud-card.active{background:var(--accent-bg);border-color:var(--accent)}
+.aud-card-name{font-size:13px;font-weight:500;color:var(--text);display:flex;align-items:center;gap:6px;margin-bottom:3px}
+.aud-card.active .aud-card-name{color:var(--accent-text)}
+.aud-card-desc{font-size:11px;color:var(--text2);line-height:1.4}
+.aud-card.active .aud-card-desc{color:var(--accent-dark)}
+.aud-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+
+.flow-days{display:flex;flex-direction:column;gap:6px}
+.flow-day{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg2);cursor:pointer;display:flex;align-items:center;gap:12px;transition:all .15s}
+.flow-day:hover{border-color:var(--accent)}
+.flow-day.active{background:var(--accent-bg);border-color:var(--accent)}
+.flow-day-num{font-size:12px;font-weight:600;color:var(--accent);width:68px;flex-shrink:0}
+.flow-day-label{font-size:13px;color:var(--text2);flex:1}
+.flow-day.active .flow-day-label{color:var(--accent-text)}
+.flow-day-desc{font-size:11px;color:var(--text3);white-space:nowrap}
+
+.kol-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.kol-card{border:1px solid var(--border);border-radius:10px;padding:10px 12px;cursor:pointer;background:var(--bg2);transition:all .15s}
+.kol-card:hover{border-color:var(--accent)}
+.kol-card.active{background:var(--accent-bg);border-color:var(--accent)}
+.kol-card-title{font-size:13px;font-weight:500;color:var(--text);margin-bottom:2px}
+.kol-card.active .kol-card-title{color:var(--accent-text)}
+.kol-card-sub{font-size:11px;color:var(--text2);line-height:1.4}
+
+.key-block{overflow:hidden;transition:max-height .4s,opacity .3s,margin .4s}
 .key-block.hidden{max-height:0;opacity:0;margin-bottom:0!important;pointer-events:none}
 .key-block.visible{max-height:200px;opacity:1}
-.key-row{display:flex;gap:10px}
+.key-row{display:flex;gap:8px}
 .key-row input{flex:1}
-.key-save-btn{padding:11px 18px;border-radius:10px;border:1px solid var(--border);background:var(--bg2);font-family:'Noto Sans TC',sans-serif;font-size:13px;color:var(--text2);cursor:pointer;white-space:nowrap;transition:all .15s}
+.key-save-btn{padding:11px 16px;border-radius:10px;border:1px solid var(--border);background:var(--bg2);font-family:'Noto Sans TC',sans-serif;font-size:13px;color:var(--text2);cursor:pointer;white-space:nowrap;transition:all .15s}
 .key-save-btn:hover{border-color:var(--accent);color:var(--accent)}
 .key-saved-badge{display:none;align-items:center;gap:10px;padding:10px 14px;border-radius:10px;background:var(--accent-bg);border:1px solid var(--border);margin-bottom:1.5rem}
 .key-saved-badge.show{display:flex}
@@ -99,21 +139,19 @@ select option{background:var(--bg2);color:var(--text)}
 .key-edit-btn:hover{border-color:var(--accent);color:var(--accent)}
 .section-divider{height:1px;background:var(--divider);margin:1.5rem 0}
 
-/* ── Buttons ── */
-.gen-btn{width:100%;padding:15px;border-radius:12px;border:none;background:var(--btn-bg);color:white;font-family:'Noto Sans TC',sans-serif;font-size:15px;font-weight:500;cursor:pointer;letter-spacing:.05em;transition:background .15s,transform .1s;margin-top:.5rem}
+.gen-btn{width:100%;padding:14px;border-radius:12px;border:none;background:var(--btn-bg);color:white;font-family:'Noto Sans TC',sans-serif;font-size:14px;font-weight:500;cursor:pointer;letter-spacing:.05em;transition:background .15s,transform .1s;margin-top:.5rem}
 .gen-btn:hover{background:var(--btn-hover)}
 .gen-btn:active{transform:scale(.99)}
 .gen-btn:disabled{background:var(--disabled);cursor:not-allowed;transform:none}
-.clear-btn{width:100%;padding:11px;border-radius:12px;border:1px solid var(--border);background:transparent;color:var(--text2);font-family:'Noto Sans TC',sans-serif;font-size:13px;cursor:pointer;letter-spacing:.03em;transition:all .15s;margin-top:8px;display:none}
+.clear-btn{width:100%;padding:10px;border-radius:12px;border:1px solid var(--border);background:transparent;color:var(--text2);font-family:'Noto Sans TC',sans-serif;font-size:13px;cursor:pointer;transition:all .15s;margin-top:8px;display:none}
 .clear-btn.show{display:block}
 .clear-btn:hover{border-color:var(--accent);color:var(--accent)}
 
-/* ── Results ── */
 .results-area{margin-top:2rem;display:none}
 .results-area.show{display:block}
 .results-divider{height:1px;background:var(--divider);margin-bottom:1.5rem}
-.result-card{background:var(--card);border:1px solid var(--border2);border-radius:14px;padding:1.25rem 1.4rem;margin-bottom:12px;position:relative}
-.result-tag{display:inline-block;font-size:11px;font-weight:500;letter-spacing:.06em;padding:4px 12px;border-radius:999px;margin-bottom:12px;background:var(--tag-bg);color:var(--tag-text)}
+.result-card{background:var(--card);border:1px solid var(--border2);border-radius:14px;padding:1.25rem 1.4rem;margin-bottom:12px}
+.result-tag{display:inline-block;font-size:11px;font-weight:500;letter-spacing:.06em;padding:3px 10px;border-radius:999px;margin-bottom:10px;background:var(--tag-bg);color:var(--tag-text)}
 .result-text{font-size:14px;line-height:1.9;color:var(--text);white-space:pre-wrap}
 .result-card-btns{display:flex;gap:8px;margin-top:12px;justify-content:flex-end}
 .copy-btn{font-size:12px;padding:5px 12px;border:1px solid var(--border);border-radius:8px;background:var(--bg2);color:var(--text3);cursor:pointer;font-family:'Noto Sans TC',sans-serif;transition:all .15s}
@@ -122,16 +160,14 @@ select option{background:var(--bg2);color:var(--text)}
 .send-editor-btn{font-size:12px;padding:5px 12px;border:1px solid var(--accent);border-radius:8px;background:var(--accent-bg);color:var(--accent-text);cursor:pointer;font-family:'Noto Sans TC',sans-serif;transition:all .15s}
 .send-editor-btn:hover{background:var(--accent);color:white}
 
-/* ── History panel ── */
 .history-panel{display:none;margin-top:1.5rem;border:1px solid var(--border2);border-radius:14px;overflow:hidden}
 .history-panel.show{display:block}
-.history-panel-header{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:var(--bg3);border-bottom:1px solid var(--border2)}
+.history-panel-header{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:var(--bg3);border-bottom:1px solid var(--border2)}
 .history-panel-label{font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--text2)}
 .history-panel-close{font-size:12px;color:var(--text3);background:none;border:none;cursor:pointer;font-family:'Noto Sans TC',sans-serif}
 .history-panel-close:hover{color:var(--accent)}
 .history-panel-cards{padding:12px}
 
-/* ── Loading ── */
 .loading-row{display:flex;align-items:center;gap:12px;padding:2rem 0;color:var(--text3);font-size:13px}
 .dot-loader span{display:inline-block;width:6px;height:6px;background:var(--dot);border-radius:50%;margin:0 2px;animation:bounce 1.2s infinite}
 .dot-loader span:nth-child(2){animation-delay:.2s}
@@ -140,7 +176,6 @@ select option{background:var(--bg2);color:var(--text)}
 .err-msg{font-size:13px;color:var(--err-text);padding:12px 14px;border:1px solid var(--err-border);border-radius:10px;background:var(--err-bg);margin-top:1rem;display:none}
 .err-msg.show{display:block}
 
-/* ── Editor ── */
 .editor-wrap{margin-top:2rem}
 .editor-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
 .editor-actions{display:flex;gap:8px}
@@ -150,55 +185,35 @@ select option{background:var(--bg2);color:var(--text)}
 .editor-copy-btn:hover{background:var(--accent);color:white}
 .editor-char-row{text-align:right;margin-bottom:6px}
 .editor-char-count{font-size:11px;color:var(--text3)}
-.editor-textarea{width:100%;min-height:160px;border:1px solid var(--border);border-radius:12px;padding:14px;font-family:'Noto Sans TC',sans-serif;font-size:14px;color:var(--text);background:var(--input-bg);resize:vertical;line-height:1.8;transition:border-color .15s;outline:none}
+.editor-textarea{width:100%;min-height:140px;border:1px solid var(--border);border-radius:12px;padding:14px;font-family:'Noto Sans TC',sans-serif;font-size:14px;color:var(--text);background:var(--input-bg);resize:vertical;line-height:1.8;transition:border-color .15s;outline:none}
 .editor-textarea:focus{border-color:var(--accent)}
 
-/* ── Emoji / Symbol panel ── */
-.emoji-section{margin-top:12px;border:1px solid var(--border2);border-radius:12px;overflow:hidden}
-.emoji-layout{display:flex;min-height:220px}
-.emoji-cats{width:110px;min-width:110px;border-right:1px solid var(--border2);background:var(--bg3);display:flex;flex-direction:column;overflow-y:auto;max-height:260px}
+.emoji-section{margin-top:10px;border:1px solid var(--border2);border-radius:12px;overflow:hidden}
+.emoji-layout{display:flex;min-height:200px}
+.emoji-cats{width:110px;min-width:110px;border-right:1px solid var(--border2);background:var(--bg3);display:flex;flex-direction:column;overflow-y:auto;max-height:250px}
 .emoji-cats::-webkit-scrollbar{width:2px}
 .emoji-cats::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
-.emoji-cat{padding:11px 12px;font-size:11px;font-family:'Noto Sans TC',sans-serif;color:var(--text2);background:transparent;border:none;border-bottom:1px solid var(--border2);cursor:pointer;text-align:left;transition:all .12s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.5;flex-shrink:0}
+.emoji-cat{padding:10px 12px;font-size:11px;font-family:'Noto Sans TC',sans-serif;color:var(--text2);background:transparent;border:none;border-bottom:1px solid var(--border2);cursor:pointer;text-align:left;transition:all .12s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.4;flex-shrink:0}
 .emoji-cat:hover{background:var(--bg2);color:var(--accent)}
 .emoji-cat.active{background:var(--accent-bg);color:var(--accent-text);font-weight:500;border-left:2px solid var(--accent)}
-.emoji-content{flex:1;background:var(--bg2);overflow-y:auto;max-height:260px;padding:12px}
+.emoji-content{flex:1;background:var(--bg2);overflow-y:auto;max-height:250px;padding:10px}
 .emoji-content::-webkit-scrollbar{width:3px}
 .emoji-content::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
-
-/* emoji grid */
-.emoji-grid{display:none;flex-wrap:wrap;gap:6px;font-size:22px;line-height:1.6;cursor:pointer}
+.emoji-grid{display:none;flex-wrap:wrap;gap:5px;font-size:21px;line-height:1.7;cursor:pointer}
 .emoji-grid.active{display:flex}
 .e-char{cursor:pointer;transition:transform .1s;display:inline-block;padding:2px}
 .e-char:hover{transform:scale(1.3)}
-
-/* symbol grid */
-.sym-grid{display:none;flex-wrap:wrap;gap:8px}
+.sym-grid{display:none;flex-wrap:wrap;gap:7px}
 .sym-grid.active{display:flex}
-.sym-char{display:inline-flex;align-items:center;justify-content:center;min-width:36px;padding:6px 10px;border:1px solid var(--border);border-radius:8px;font-size:15px;cursor:pointer;color:var(--text);background:var(--bg2);transition:all .12s;white-space:nowrap;line-height:1.4}
+.sym-char{display:inline-flex;align-items:center;justify-content:center;min-width:36px;padding:5px 9px;border:1px solid var(--border);border-radius:8px;font-size:14px;cursor:pointer;color:var(--text);background:var(--bg2);transition:all .12s;white-space:nowrap;line-height:1.4}
 .sym-char:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-bg)}
-
-/* kaomoji grid */
-.kao-grid{display:none;flex-wrap:wrap;gap:8px}
+.kao-grid{display:none;flex-wrap:wrap;gap:7px}
 .kao-grid.active{display:flex}
-.kao{display:inline-block;font-size:13px;padding:6px 12px;border:1px solid var(--border);border-radius:10px;cursor:pointer;color:var(--text);background:var(--bg2);transition:all .12s;font-family:'Noto Sans TC',sans-serif;white-space:nowrap;line-height:1.5}
+.kao{display:inline-block;font-size:12px;padding:5px 10px;border:1px solid var(--border);border-radius:10px;cursor:pointer;color:var(--text);background:var(--bg2);transition:all .12s;font-family:'Noto Sans TC',sans-serif;white-space:nowrap;line-height:1.5}
 .kao:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-bg)}
 
-@media(max-width:780px){body{display:block}.sidebar{position:fixed;left:-260px;top:0;z-index:200;height:100vh;transition:left .3s;box-shadow:2px 0 20px rgba(0,0,0,.12)}.sidebar.open{left:0}.sidebar-toggle{display:block}.main-wrap{padding:1.5rem 1rem 5rem}}
-@media(max-width:500px){.two-col{grid-template-columns:1fr}.voice-grid{grid-template-columns:1fr}.emoji-cats{width:85px;min-width:85px}.emoji-cat{font-size:10px;padding:9px 8px}}
-
-  /* ── Password overlay ── */
-  .pw-overlay{position:fixed;inset:0;background:var(--bg, #F2ECEC);z-index:9999;display:flex;align-items:center;justify-content:center;transition:opacity .3s}
-  .pw-overlay.hide{opacity:0;pointer-events:none}
-  .pw-box{width:320px;padding:2.5rem 2rem;background:var(--bg2, #fff);border:1px solid var(--border2, #E8DEDE);border-radius:16px;text-align:center}
-  .pw-logo{width:10px;height:10px;border-radius:50%;background:#E05A29;margin:0 auto 1.2rem}
-  .pw-title{font-family:'Noto Serif TC',serif;font-size:18px;font-weight:600;color:var(--text, #1C1214);margin-bottom:.4rem}
-  .pw-sub{font-size:13px;color:var(--text2, #7A5E64);margin-bottom:1.5rem}
-  .pw-input{width:100%;border:1px solid var(--border, #DDD0D2);border-radius:10px;padding:11px 14px;font-family:'Noto Sans TC',sans-serif;font-size:15px;color:var(--text, #1C1214);background:var(--input-bg, #fff);outline:none;text-align:center;letter-spacing:.2em;margin-bottom:10px}
-  .pw-input:focus{border-color:#E05A29}
-  .pw-btn{width:100%;padding:12px;border-radius:10px;border:none;background:#E05A29;color:white;font-family:'Noto Sans TC',sans-serif;font-size:14px;font-weight:500;cursor:pointer;transition:background .15s}
-  .pw-btn:hover{background:#B84420}
-  .pw-err{font-size:12px;color:#A32D2D;margin-top:8px;min-height:16px}
+@media(max-width:860px){body{display:block}.leftnav{position:fixed;left:-220px;top:0;z-index:200;height:100vh;transition:left .3s;box-shadow:2px 0 20px rgba(0,0,0,.15)}.leftnav.open{left:0}.nav-toggle{display:block}.main-wrap{padding:1.5rem 1rem 5rem}}
+@media(max-width:500px){.two-col{grid-template-columns:1fr}.voice-grid{grid-template-columns:1fr}.audience-grid{grid-template-columns:1fr}.kol-grid{grid-template-columns:1fr}.emoji-cats{width:85px;min-width:85px}}
 </style>
 </head>
 <body class="theme-ivory">
@@ -208,24 +223,42 @@ select option{background:var(--bg2);color:var(--text)}
     <div class="pw-logo"></div>
     <div class="pw-title">文案產生器</div>
     <div class="pw-sub">請輸入密碼以繼續</div>
-    <input class="pw-input" id="pw-input" type="password" placeholder="••••••••" maxlength="20"/>
+    <input class="pw-input" id="pw-input" type="password" placeholder="••••••••" maxlength="30"/>
     <button class="pw-btn" onclick="checkPw()">進入</button>
     <div class="pw-err" id="pw-err"></div>
   </div>
 </div>
 
-
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-header">
-    <div class="sidebar-title">歷史紀錄</div>
-    <button class="sidebar-clear" onclick="clearHistory()">清除</button>
+<div class="leftnav" id="leftnav">
+  <div class="nav-logo">
+    <div><span class="nav-logo-dot"></span><span class="nav-logo-text">文案產生器</span></div>
+    <div class="nav-logo-sub">VV DOUBLE Internal</div>
   </div>
-  <div class="sidebar-list" id="sidebar-list">
-    <div class="sidebar-empty" id="sidebar-empty">還沒有紀錄</div>
+  <div class="nav-sec-lbl">工具模組</div>
+  <div class="nav-item active" data-mod="ig" onclick="switchMod(this)">
+    <div class="nav-icon">📱</div><div class="nav-text">IG / Threads</div>
+  </div>
+  <div class="nav-item" data-mod="line" onclick="switchMod(this)">
+    <div class="nav-icon">💬</div><div class="nav-text">LINE 推播</div><div class="nav-badge">新</div>
+  </div>
+  <div class="nav-item" data-mod="sms" onclick="switchMod(this)">
+    <div class="nav-icon">📩</div><div class="nav-text">簡訊</div><div class="nav-badge">新</div>
+  </div>
+  <div class="nav-item" data-mod="flow" onclick="switchMod(this)">
+    <div class="nav-icon">🔄</div><div class="nav-text">Welcome Flow</div><div class="nav-badge">新</div>
+  </div>
+  <div class="nav-item" data-mod="kol" onclick="switchMod(this)">
+    <div class="nav-icon">🌟</div><div class="nav-text">素人口碑</div><div class="nav-badge">新</div>
+  </div>
+  <div class="nav-divider"></div>
+  <div class="nav-hist-wrap">
+    <div class="nav-hist-lbl">歷史紀錄</div>
+    <button class="nav-hist-clear" onclick="clearHistory()">清除全部</button>
+    <div id="nav-hist-list"><div style="font-size:11px;color:#444;padding:6px 16px">還沒有紀錄</div></div>
   </div>
 </div>
 
-<button class="sidebar-toggle" onclick="toggleSidebar()">紀錄</button>
+<button class="nav-toggle" onclick="document.getElementById('leftnav').classList.toggle('open')">模組</button>
 
 <div class="main-wrap">
 <div class="container">
@@ -234,7 +267,7 @@ select option{background:var(--bg2);color:var(--text)}
     <div class="header-left">
       <div class="logo-dot"></div>
       <div>
-        <div class="header-title">文案產生器</div>
+        <div class="header-title" id="mod-title">IG / Threads 文案</div>
         <div class="header-sub">填好設定，按一下，文案直接產出</div>
       </div>
     </div>
@@ -259,69 +292,174 @@ select option{background:var(--bg2);color:var(--text)}
     </div>
     <div style="font-size:12px;color:var(--text3);margin-top:6px;">Key 只存在你的瀏覽器，不會外傳</div>
   </div>
-
   <div class="section-divider"></div>
 
-  <div class="form-block">
-    <div class="section-label">文案類型</div>
-    <div class="pill-group" id="type-group">
-      <button class="pill active" data-value="ig_caption">IG 貼文</button>
-      <button class="pill" data-value="threads">Threads</button>
-      <button class="pill" data-value="flash_sale">限時閃購</button>
-      <button class="pill" data-value="new_arrival">新品上架</button>
-      <button class="pill" data-value="livestream">直播預告</button>
-      <button class="pill" data-value="collab">聯名宣傳</button>
-      <button class="pill" data-value="store_event">門市活動</button>
-      <button class="pill" data-value="brand_story">品牌故事</button>
-    </div>
-  </div>
-
-  <div class="form-block">
-    <div class="section-label">語氣風格</div>
-    <div class="pill-group" id="tone-group">
-      <button class="pill active" data-value="warm">溫暖真誠</button>
-      <button class="pill" data-value="playful">輕鬆俏皮</button>
-      <button class="pill" data-value="confident">自信有力</button>
-      <button class="pill" data-value="emotional">感性共鳴</button>
-      <button class="pill" data-value="urgent">製造緊迫感</button>
-    </div>
-    <div class="tone-hint" id="tone-hint">適合日常商品介紹、品牌理念傳遞</div>
-  </div>
-
-  <div class="form-block">
-    <div class="section-label">發文視角</div>
-    <div class="voice-grid" id="voice-group">
-      <button class="voice-card active" data-value="vvn">
-        <div class="voice-pov">第一人稱</div>
-        <div class="voice-card-title">VVN 本人</div>
-        <div class="voice-card-sub">創辦人第一人稱，真實有故事感</div>
-      </button>
-      <button class="voice-card" data-value="brand">
-        <div class="voice-pov">品牌視角</div>
-        <div class="voice-card-title">VV DOUBLE 品牌</div>
-        <div class="voice-card-sub">以「我們」出發，有品牌主張感</div>
-      </button>
-      <button class="voice-card" data-value="editor">
-        <div class="voice-pov">第三人稱</div>
-        <div class="voice-card-title">小編</div>
-        <div class="voice-card-sub">活潑親切，適合商品介紹</div>
-      </button>
-      <button class="voice-card" data-value="customer">
-        <div class="voice-pov">客人視角</div>
-        <div class="voice-card-title">客人分享</div>
-        <div class="voice-card-sub">模擬真實穿搭心得，增加信任感</div>
-      </button>
-    </div>
-  </div>
-
-  <div class="two-col">
+  <!-- IG MODULE -->
+  <div class="mod-panel show" id="mod-ig">
     <div class="form-block">
-      <div class="section-label">商品 / 活動名稱</div>
-      <input type="text" id="product-name" placeholder="例：雪紡吊帶洋裝"/>
+      <div class="section-label">文案類型</div>
+      <div class="pill-group" id="type-group">
+        <button class="pill active" data-value="ig_caption">IG 貼文</button>
+        <button class="pill" data-value="threads">Threads</button>
+        <button class="pill" data-value="flash_sale">限時閃購</button>
+        <button class="pill" data-value="new_arrival">新品上架</button>
+        <button class="pill" data-value="livestream">直播預告</button>
+        <button class="pill" data-value="collab">聯名宣傳</button>
+        <button class="pill" data-value="store_event">門市活動</button>
+        <button class="pill" data-value="brand_story">品牌故事</button>
+        <button class="pill" data-value="theme_plan">主題企劃</button>
+      </div>
+    </div>
+
+    <div class="form-block">
+      <div class="section-label">受眾層級</div>
+      <div class="audience-grid" id="audience-group">
+        <div class="aud-card active" data-value="cold">
+          <div class="aud-card-name"><span class="aud-dot" style="background:#E05A29"></span>陌生觸及</div>
+          <div class="aud-card-desc">從未接觸品牌，建立第一印象</div>
+        </div>
+        <div class="aud-card" data-value="warm">
+          <div class="aud-card-name"><span class="aud-dot" style="background:#FFB74D"></span>潛在新客</div>
+          <div class="aud-card-desc">看過廣告但還沒買，給下單理由</div>
+        </div>
+        <div class="aud-card" data-value="new">
+          <div class="aud-card-name"><span class="aud-dot" style="background:#66BB6A"></span>新客</div>
+          <div class="aud-card-desc">第一次購買，溫暖迎接建立信任</div>
+        </div>
+        <div class="aud-card" data-value="existing">
+          <div class="aud-card-name"><span class="aud-dot" style="background:#42A5F5"></span>既有客</div>
+          <div class="aud-card-desc">回購客，熟悉感、回購動機</div>
+        </div>
+        <div class="aud-card" data-value="dormant" style="grid-column:1/-1">
+          <div class="aud-card-name"><span class="aud-dot" style="background:#AB47BC"></span>沈睡 / 流失客</div>
+          <div class="aud-card-desc">好久不見，輕推或強鉤子把人找回來</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-block">
+      <div class="section-label">發文視角</div>
+      <div class="voice-grid" id="voice-group">
+        <button class="voice-card active" data-value="vvn">
+          <div class="voice-pov">第一人稱</div>
+          <div class="voice-card-title">VVN 本人</div>
+          <div class="voice-card-sub">創辦人口吻，真實有故事感</div>
+        </button>
+        <button class="voice-card" data-value="brand">
+          <div class="voice-pov">品牌視角</div>
+          <div class="voice-card-title">VV DOUBLE 品牌</div>
+          <div class="voice-card-sub">以「我們」出發，有品牌主張</div>
+        </button>
+        <button class="voice-card" data-value="editor">
+          <div class="voice-pov">第三人稱</div>
+          <div class="voice-card-title">小編</div>
+          <div class="voice-card-sub">活潑親切，適合商品介紹</div>
+        </button>
+        <button class="voice-card" data-value="customer">
+          <div class="voice-pov">客人視角</div>
+          <div class="voice-card-title">客人分享</div>
+          <div class="voice-card-sub">真實穿搭心得，增加信任感</div>
+        </button>
+      </div>
+    </div>
+
+    <div class="form-block">
+      <div class="section-label">語氣風格</div>
+      <div class="pill-group" id="tone-group">
+        <button class="pill active" data-value="warm">溫暖真誠</button>
+        <button class="pill" data-value="playful">輕鬆俏皮</button>
+        <button class="pill" data-value="confident">自信有力</button>
+        <button class="pill" data-value="emotional">感性共鳴</button>
+        <button class="pill" data-value="urgent">製造緊迫感</button>
+      </div>
+      <div class="tone-hint" id="tone-hint">適合日常商品介紹、品牌理念傳遞</div>
+    </div>
+
+    <div class="two-col">
+      <div class="form-block">
+        <div class="section-label">商品 / 活動名稱</div>
+        <input type="text" id="product-name" placeholder="例：雪紡吊帶洋裝"/>
+      </div>
+      <div class="form-block">
+        <div class="section-label">產出數量</div>
+        <select id="ig-count">
+          <option value="1">1 則</option>
+          <option value="2">2 則</option>
+          <option value="3" selected>3 則</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-block">
+      <div class="section-label">文案長度</div>
+      <div class="pill-group" id="length-group">
+        <button class="pill" data-value="short">Short</button>
+        <button class="pill active" data-value="mid">Mid</button>
+        <button class="pill" data-value="long">Long</button>
+      </div>
+      <div class="tone-hint" id="length-hint">適合 IG、Threads 搭配圖片，100–180 字</div>
+    </div>
+
+    <div class="form-block">
+      <div class="section-label">補充資訊（可選）</div>
+      <textarea id="extra-info" rows="3" placeholder="例：顯瘦版型、深藍和白色、定價 $899..."></textarea>
+      <div class="char-count" id="char-count">0 / 200</div>
+    </div>
+
+    <div class="form-block">
+      <div class="section-label">加入 Hashtag</div>
+      <div class="pill-group" id="hashtag-group">
+        <button class="pill active" data-value="#VVDOUBLE">#VVDOUBLE</button>
+        <button class="pill active" data-value="#大尺碼不是特例">#大尺碼不是特例</button>
+        <button class="pill active" data-value="#肉肉女孩">#肉肉女孩</button>
+        <button class="pill" data-value="#中大尺碼">#中大尺碼</button>
+        <button class="pill" data-value="#棉花糖女孩">#棉花糖女孩</button>
+        <button class="pill" data-value="#大尺碼穿搭">#大尺碼穿搭</button>
+        <button class="pill" data-value="#獨家自訂">#獨家自訂</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LINE MODULE -->
+  <div class="mod-panel" id="mod-line">
+    <div class="form-block">
+      <div class="section-label">推播目的</div>
+      <div class="pill-group" id="line-purpose-group">
+        <button class="pill active" data-value="new_arrival">上新通知</button>
+        <button class="pill" data-value="dormant">喚醒沈睡客</button>
+        <button class="pill" data-value="lost">喚醒流失客</button>
+        <button class="pill" data-value="vip">Top VIP 專屬</button>
+        <button class="pill" data-value="member_day">會員日 / 限時加購</button>
+        <button class="pill" data-value="repurchase">二次購誘因</button>
+      </div>
+    </div>
+    <div class="form-block">
+      <div class="section-label">字數限制</div>
+      <div class="pill-group" id="line-length-group">
+        <button class="pill active" data-value="50">短（50字內）</button>
+        <button class="pill" data-value="100">中（100字內）</button>
+        <button class="pill" data-value="150">長（150字內）</button>
+      </div>
+    </div>
+    <div class="form-block">
+      <div class="section-label">加入連結佔位符</div>
+      <div class="pill-group" id="line-link-group">
+        <button class="pill active" data-value="official">官網連結</button>
+        <button class="pill" data-value="event">活動頁連結</button>
+        <button class="pill" data-value="none">不加連結</button>
+      </div>
+    </div>
+    <div class="form-block">
+      <div class="section-label">優惠資訊（選填）</div>
+      <input type="text" id="line-offer" placeholder="例：回購 88折、滿 $1500 送小物"/>
+    </div>
+    <div class="form-block">
+      <div class="section-label">補充（選填）</div>
+      <input type="text" id="line-extra" placeholder="例：限今日、剛上的新款"/>
     </div>
     <div class="form-block">
       <div class="section-label">產出數量</div>
-      <select id="count-select">
+      <select id="line-count">
         <option value="1">1 則</option>
         <option value="2">2 則</option>
         <option value="3" selected>3 則</option>
@@ -329,32 +467,148 @@ select option{background:var(--bg2);color:var(--text)}
     </div>
   </div>
 
-  <div class="form-block">
-    <div class="section-label">文案長度</div>
-    <div class="pill-group" id="length-group">
-      <button class="pill" data-value="short">Short</button>
-      <button class="pill active" data-value="mid">Mid</button>
-      <button class="pill" data-value="long">Long</button>
+  <!-- SMS MODULE -->
+  <div class="mod-panel" id="mod-sms">
+    <div class="form-block">
+      <div class="section-label">簡訊目的</div>
+      <div class="pill-group" id="sms-purpose-group">
+        <button class="pill active" data-value="vip_wake">Top VIP 喚醒</button>
+        <button class="pill" data-value="new_arrival">上新通知</button>
+        <button class="pill" data-value="flash">限時閃購</button>
+        <button class="pill" data-value="member_day">會員日</button>
+      </div>
     </div>
-    <div class="tone-hint" id="length-hint">適合 IG、Threads 搭配圖片，100–180 字</div>
+    <div class="form-block">
+      <div class="section-label">字數（簡訊上限 70 字）</div>
+      <div class="pill-group" id="sms-length-group">
+        <button class="pill active" data-value="50">精簡 50 字內</button>
+        <button class="pill" data-value="70">最多 70 字</button>
+      </div>
+    </div>
+    <div class="form-block">
+      <div class="section-label">優惠（選填）</div>
+      <input type="text" id="sms-offer" placeholder="例：VIP 專屬 9折、限今日"/>
+    </div>
+    <div class="form-block">
+      <div class="section-label">產出數量</div>
+      <select id="sms-count">
+        <option value="1">1 則</option>
+        <option value="2">2 則</option>
+        <option value="3" selected>3 則</option>
+      </select>
+    </div>
   </div>
 
-  <div class="form-block">
-    <div class="section-label">補充資訊（可選）</div>
-    <textarea id="extra-info" rows="3" placeholder="例：顯瘦版型、深藍和白色、定價 $899..."></textarea>
-    <div class="char-count" id="char-count">0 / 200</div>
+  <!-- WELCOME FLOW MODULE -->
+  <div class="mod-panel" id="mod-flow">
+    <div class="form-block">
+      <div class="section-label">觸點選擇</div>
+      <div class="flow-days" id="flow-day-group">
+        <div class="flow-day active" data-value="day0">
+          <div class="flow-day-num">第 0 天</div>
+          <div class="flow-day-label">感謝 + 導進 LINE</div>
+          <div class="flow-day-desc">下單當下</div>
+        </div>
+        <div class="flow-day" data-value="day5">
+          <div class="flow-day-num">第 5–7 天</div>
+          <div class="flow-day-label">純給價值，不推銷</div>
+          <div class="flow-day-desc">到貨穿搭建議</div>
+        </div>
+        <div class="flow-day" data-value="day14">
+          <div class="flow-day-num">第 14 天</div>
+          <div class="flow-day-label">邀曬單 + 收 UGC</div>
+          <div class="flow-day-desc">真實身形內容</div>
+        </div>
+        <div class="flow-day" data-value="day30">
+          <div class="flow-day-num">第 30–40 天</div>
+          <div class="flow-day-label">二次購誘因</div>
+          <div class="flow-day-desc">進入回購窗口</div>
+        </div>
+        <div class="flow-day" data-value="day50">
+          <div class="flow-day-num">第 50–54 天</div>
+          <div class="flow-day-label">最後提醒</div>
+          <div class="flow-day-desc">窗口關閉前收尾</div>
+        </div>
+      </div>
+    </div>
+    <div class="form-block">
+      <div class="section-label">通路</div>
+      <div class="pill-group" id="flow-channel-group">
+        <button class="pill active" data-value="line">LINE</button>
+        <button class="pill" data-value="sms">簡訊</button>
+      </div>
+    </div>
+    <div class="form-block">
+      <div class="section-label">優惠（第30天後才填）</div>
+      <input type="text" id="flow-offer" placeholder="例：回購 88折、滿額送小物"/>
+    </div>
+    <div class="form-block">
+      <div class="section-label">產出數量</div>
+      <select id="flow-count">
+        <option value="1">1 則</option>
+        <option value="2" selected>2 則</option>
+        <option value="3">3 則</option>
+      </select>
+    </div>
   </div>
 
-  <div class="form-block">
-    <div class="section-label">加入 Hashtag</div>
-    <div class="pill-group" id="hashtag-group">
-      <button class="pill active" data-value="#VVDOUBLE">#VVDOUBLE</button>
-      <button class="pill active" data-value="#大尺碼不是特例">#大尺碼不是特例</button>
-      <button class="pill active" data-value="#肉肉女孩">#肉肉女孩</button>
-      <button class="pill" data-value="#中大尺碼">#中大尺碼</button>
-      <button class="pill" data-value="#棉花糖女孩">#棉花糖女孩</button>
-      <button class="pill" data-value="#大尺碼穿搭">#大尺碼穿搭</button>
-      <button class="pill" data-value="#獨家自訂">#獨家自訂</button>
+  <!-- KOL MODULE -->
+  <div class="mod-panel" id="mod-kol">
+    <div class="form-block">
+      <div class="section-label">素人文案類型</div>
+      <div class="kol-grid" id="kol-type-group">
+        <div class="kol-card active" data-value="unbox">
+          <div class="kol-card-title">開箱分享</div>
+          <div class="kol-card-sub">真實、輕揭露、像朋友說話</div>
+        </div>
+        <div class="kol-card" data-value="outfit">
+          <div class="kol-card-title">穿搭分享</div>
+          <div class="kol-card-sub">情境式，展示如何搭配</div>
+        </div>
+        <div class="kol-card" data-value="review">
+          <div class="kol-card-title">穿後心得</div>
+          <div class="kol-card-sub">版型、材質、上身感受</div>
+        </div>
+        <div class="kol-card" data-value="discount">
+          <div class="kol-card-title">折扣碼推薦</div>
+          <div class="kol-card-sub">帶折扣碼、有行動呼籲</div>
+        </div>
+      </div>
+    </div>
+    <div class="form-block">
+      <div class="section-label">發文平台</div>
+      <div class="pill-group" id="kol-platform-group">
+        <button class="pill active" data-value="threads">Threads</button>
+        <button class="pill" data-value="ig_story">IG 限動</button>
+        <button class="pill" data-value="ig_post">IG 貼文</button>
+      </div>
+    </div>
+    <div class="form-block">
+      <div class="section-label">揭露程度</div>
+      <div class="pill-group" id="kol-disclose-group">
+        <button class="pill active" data-value="light">輕揭露（自然提及）</button>
+        <button class="pill" data-value="clear">明確標示合作</button>
+      </div>
+    </div>
+    <div class="form-block">
+      <div class="section-label">商品</div>
+      <input type="text" id="kol-product" placeholder="例：雪紡吊帶洋裝 $899"/>
+    </div>
+    <div class="form-block">
+      <div class="section-label">折扣碼（選填）</div>
+      <input type="text" id="kol-code" placeholder="例：VVAMY10"/>
+    </div>
+    <div class="form-block">
+      <div class="section-label">補充（選填）</div>
+      <input type="text" id="kol-extra" placeholder="例：深藍色、顯瘦版型"/>
+    </div>
+    <div class="form-block">
+      <div class="section-label">產出數量</div>
+      <select id="kol-count">
+        <option value="1">1 則</option>
+        <option value="2">2 則</option>
+        <option value="3" selected>3 則</option>
+      </select>
     </div>
   </div>
 
@@ -376,7 +630,6 @@ select option{background:var(--bg2);color:var(--text)}
     <div class="history-panel-cards" id="history-panel-cards"></div>
   </div>
 
-  <!-- 文案編輯區 -->
   <div class="editor-wrap">
     <div class="results-divider" style="margin-top:2rem"></div>
     <div class="editor-header">
@@ -386,11 +639,8 @@ select option{background:var(--bg2);color:var(--text)}
         <button class="editor-copy-btn" onclick="copyEditor()">複製全文</button>
       </div>
     </div>
-    <div class="editor-char-row">
-      <div class="editor-char-count" id="editor-char-count">0 字</div>
-    </div>
+    <div class="editor-char-row"><div class="editor-char-count" id="editor-char-count">0 字</div></div>
     <textarea class="editor-textarea" id="editor-textarea" placeholder="從產出結果點「送入編輯區」，或直接在這裡輸入 / 貼上文案..."></textarea>
-
     <div class="emoji-section">
       <div class="emoji-layout">
         <div class="emoji-cats" id="emoji-cats">
@@ -412,60 +662,24 @@ select option{background:var(--bg2);color:var(--text)}
           <button class="emoji-cat" data-cat="ka-animal">ʕ•ᴥ•ʔ 動物</button>
           <button class="emoji-cat" data-cat="ka-misc">( ˘ω˘) 其他</button>
         </div>
-        <div class="emoji-content" id="emoji-content">
-          <div class="emoji-grid active" id="eg-heart">
-            <span class="e-char">🩷</span><span class="e-char">❤️</span><span class="e-char">🧡</span><span class="e-char">💛</span><span class="e-char">💚</span><span class="e-char">💙</span><span class="e-char">💜</span><span class="e-char">🖤</span><span class="e-char">🤍</span><span class="e-char">🤎</span><span class="e-char">💕</span><span class="e-char">💗</span><span class="e-char">💖</span><span class="e-char">💝</span><span class="e-char">💞</span><span class="e-char">💓</span><span class="e-char">💘</span><span class="e-char">💔</span><span class="e-char">❣️</span><span class="e-char">💟</span><span class="e-char">🫶</span><span class="e-char">🥰</span><span class="e-char">😍</span><span class="e-char">😘</span><span class="e-char">💋</span><span class="e-char">🫰</span><span class="e-char">🤞</span><span class="e-char">🙌</span><span class="e-char">👏</span><span class="e-char">🎀</span>
-          </div>
-          <div class="emoji-grid" id="eg-face">
-            <span class="e-char">😊</span><span class="e-char">😄</span><span class="e-char">😁</span><span class="e-char">🤩</span><span class="e-char">🥹</span><span class="e-char">😌</span><span class="e-char">🥺</span><span class="e-char">🤭</span><span class="e-char">😏</span><span class="e-char">😎</span><span class="e-char">🙃</span><span class="e-char">😋</span><span class="e-char">🤗</span><span class="e-char">😇</span><span class="e-char">🫠</span><span class="e-char">🥳</span><span class="e-char">😴</span><span class="e-char">🤔</span><span class="e-char">🫣</span><span class="e-char">😂</span><span class="e-char">🤣</span><span class="e-char">😭</span><span class="e-char">😢</span><span class="e-char">🥲</span><span class="e-char">😤</span><span class="e-char">😬</span><span class="e-char">🫡</span><span class="e-char">🤫</span><span class="e-char">😶</span><span class="e-char">😑</span>
-          </div>
-          <div class="emoji-grid" id="eg-fashion">
-            <span class="e-char">👗</span><span class="e-char">👘</span><span class="e-char">🥻</span><span class="e-char">👙</span><span class="e-char">🩱</span><span class="e-char">🩲</span><span class="e-char">🩳</span><span class="e-char">👚</span><span class="e-char">👕</span><span class="e-char">👖</span><span class="e-char">🧥</span><span class="e-char">🥼</span><span class="e-char">👔</span><span class="e-char">👒</span><span class="e-char">🎩</span><span class="e-char">🧢</span><span class="e-char">👑</span><span class="e-char">💄</span><span class="e-char">💅</span><span class="e-char">💍</span><span class="e-char">💎</span><span class="e-char">👜</span><span class="e-char">👝</span><span class="e-char">👛</span><span class="e-char">🎒</span><span class="e-char">🕶️</span><span class="e-char">🧣</span><span class="e-char">🧤</span><span class="e-char">🧦</span><span class="e-char">👟</span>
-          </div>
-          <div class="emoji-grid" id="eg-nature">
-            <span class="e-char">🌸</span><span class="e-char">🌺</span><span class="e-char">🌹</span><span class="e-char">🌷</span><span class="e-char">🌼</span><span class="e-char">🌻</span><span class="e-char">💐</span><span class="e-char">🌿</span><span class="e-char">🍃</span><span class="e-char">🍀</span><span class="e-char">🌱</span><span class="e-char">🪴</span><span class="e-char">🌲</span><span class="e-char">🌴</span><span class="e-char">🦋</span><span class="e-char">🐝</span><span class="e-char">🐞</span><span class="e-char">🌈</span><span class="e-char">☀️</span><span class="e-char">🌙</span><span class="e-char">⭐</span><span class="e-char">🌟</span><span class="e-char">💫</span><span class="e-char">⛅</span><span class="e-char">🌊</span><span class="e-char">🪷</span><span class="e-char">🫧</span><span class="e-char">🌠</span><span class="e-char">🪐</span><span class="e-char">🌴</span>
-          </div>
-          <div class="emoji-grid" id="eg-star">
-            <span class="e-char">✨</span><span class="e-char">🌟</span><span class="e-char">⭐</span><span class="e-char">💫</span><span class="e-char">🌠</span><span class="e-char">🎇</span><span class="e-char">🎆</span><span class="e-char">🪄</span><span class="e-char">🔮</span><span class="e-char">💎</span><span class="e-char">🌙</span><span class="e-char">☀️</span><span class="e-char">🌈</span><span class="e-char">🎀</span><span class="e-char">🎁</span><span class="e-char">🎉</span><span class="e-char">🎊</span><span class="e-char">🥂</span><span class="e-char">🍾</span><span class="e-char">🫧</span><span class="e-char">🦄</span><span class="e-char">🪩</span><span class="e-char">🫶</span><span class="e-char">💖</span><span class="e-char">🌸</span><span class="e-char">🪅</span><span class="e-char">🎠</span><span class="e-char">🎡</span><span class="e-char">🎪</span><span class="e-char">🎭</span>
-          </div>
-          <div class="emoji-grid" id="eg-food">
-            <span class="e-char">🍰</span><span class="e-char">🎂</span><span class="e-char">🧁</span><span class="e-char">🍩</span><span class="e-char">🍪</span><span class="e-char">🍫</span><span class="e-char">🍬</span><span class="e-char">🍭</span><span class="e-char">🍦</span><span class="e-char">🧋</span><span class="e-char">🍵</span><span class="e-char">☕</span><span class="e-char">🍓</span><span class="e-char">🍑</span><span class="e-char">🍒</span><span class="e-char">🍇</span><span class="e-char">🍉</span><span class="e-char">🍊</span><span class="e-char">🍋</span><span class="e-char">🥝</span><span class="e-char">🫐</span><span class="e-char">🍎</span><span class="e-char">🍡</span><span class="e-char">🍮</span><span class="e-char">🍯</span><span class="e-char">🧃</span><span class="e-char">🥤</span><span class="e-char">🫖</span><span class="e-char">🍶</span><span class="e-char">🥛</span>
-          </div>
-
-          <div class="sym-grid" id="sy-heart">
-            <span class="sym-char">♡</span><span class="sym-char">♥</span><span class="sym-char">❤</span><span class="sym-char">❥</span><span class="sym-char">❦</span><span class="sym-char">❧</span><span class="sym-char">ღ</span><span class="sym-char">❣</span><span class="sym-char">˚♡</span><span class="sym-char">⸜♡⸝</span><span class="sym-char">ʚɞ</span><span class="sym-char">꒰♡꒱</span><span class="sym-char">˘ᵕ˘</span><span class="sym-char">◡̎</span><span class="sym-char">♡˖꒰ᵕ꒱</span><span class="sym-char">⋆˚✿˖°</span><span class="sym-char">(♡)</span><span class="sym-char">·͜·♡</span>
-          </div>
-          <div class="sym-grid" id="sy-star">
-            <span class="sym-char">★</span><span class="sym-char">☆</span><span class="sym-char">✦</span><span class="sym-char">✧</span><span class="sym-char">✩</span><span class="sym-char">✪</span><span class="sym-char">✫</span><span class="sym-char">✬</span><span class="sym-char">✭</span><span class="sym-char">✮</span><span class="sym-char">✯</span><span class="sym-char">✰</span><span class="sym-char">⭐</span><span class="sym-char">⁂</span><span class="sym-char">✺</span><span class="sym-char">✹</span><span class="sym-char">✸</span><span class="sym-char">✷</span><span class="sym-char">✶</span><span class="sym-char">✵</span><span class="sym-char">✴</span><span class="sym-char">✳</span><span class="sym-char">✲</span><span class="sym-char">⊹</span><span class="sym-char">₊⊹</span><span class="sym-char">*ੈ✩‧₊</span><span class="sym-char">˚✧₊⁺</span><span class="sym-char">ᯓ★</span>
-          </div>
-          <div class="sym-grid" id="sy-arrow">
-            <span class="sym-char">→</span><span class="sym-char">←</span><span class="sym-char">↑</span><span class="sym-char">↓</span><span class="sym-char">↗</span><span class="sym-char">↘</span><span class="sym-char">↙</span><span class="sym-char">↖</span><span class="sym-char">⇒</span><span class="sym-char">⇐</span><span class="sym-char">➤</span><span class="sym-char">➜</span><span class="sym-char">➝</span><span class="sym-char">➞</span><span class="sym-char">▶</span><span class="sym-char">◀</span><span class="sym-char">▲</span><span class="sym-char">▼</span><span class="sym-char">►</span><span class="sym-char">◄</span><span class="sym-char">↻</span><span class="sym-char">↺</span><span class="sym-char">.ᐟ</span><span class="sym-char">᪥</span><span class="sym-char">⁀➷</span>
-          </div>
-          <div class="sym-grid" id="sy-deco">
-            <span class="sym-char">✿</span><span class="sym-char">❀</span><span class="sym-char">❁</span><span class="sym-char">❂</span><span class="sym-char">✾</span><span class="sym-char">✽</span><span class="sym-char">✼</span><span class="sym-char">✻</span><span class="sym-char">❃</span><span class="sym-char">❄</span><span class="sym-char">❅</span><span class="sym-char">❆</span><span class="sym-char">°</span><span class="sym-char">•</span><span class="sym-char">·</span><span class="sym-char">｡</span><span class="sym-char">♩</span><span class="sym-char">♪</span><span class="sym-char">♫</span><span class="sym-char">♬</span><span class="sym-char">𓈊</span><span class="sym-char">𓂃</span><span class="sym-char">𖡼</span><span class="sym-char">ꕤ</span><span class="sym-char">ꕁ</span><span class="sym-char">ꔛ</span><span class="sym-char">ꔚ</span><span class="sym-char">※</span><span class="sym-char">§</span><span class="sym-char">†</span>
-          </div>
-          <div class="sym-grid" id="sy-bracket">
-            <span class="sym-char">「　」</span><span class="sym-char">『　』</span><span class="sym-char">【　】</span><span class="sym-char">〖　〗</span><span class="sym-char">《　》</span><span class="sym-char">〈　〉</span><span class="sym-char">｛　｝</span><span class="sym-char">〔　〕</span><span class="sym-char">（　）</span><span class="sym-char">꒰　꒱</span><span class="sym-char">⌒⌒</span><span class="sym-char">°°</span><span class="sym-char">·͜·</span><span class="sym-char">＊</span><span class="sym-char">~</span>
-          </div>
-
-          <div class="kao-grid" id="ka-happy">
-            <span class="kao">(◕‿◕)</span><span class="kao">( ´ ▽ ` )</span><span class="kao">(＾▽＾)</span><span class="kao">(≧▽≦)</span><span class="kao">(✿◠‿◠)</span><span class="kao">(ﾉ◕ヮ◕)ﾉ</span><span class="kao">✧◝(⁰▿⁰)◜✧</span><span class="kao">(*^▽^*)</span><span class="kao">(⌒▽⌒)☆</span><span class="kao">d(^_^o)</span><span class="kao">(o^▽^o)</span><span class="kao">\(^▽^)/</span><span class="kao">(´∀｀)♡</span><span class="kao">٩(◕‿◕｡)۶</span><span class="kao">(*≧ω≦*)</span><span class="kao">(ﾉ´ヮ`)ﾉ*: ･ﾟ</span><span class="kao">(^人^)</span><span class="kao">(＠＾◡＾)</span><span class="kao">☆*:.｡.(≧▽≦)o.｡.:*☆</span><span class="kao">(´▽`ʃ♡ƪ)</span>
-          </div>
-          <div class="kao-grid" id="ka-love">
-            <span class="kao">(♥ω♥)</span><span class="kao">(｡♥‿♥｡)</span><span class="kao">( ˘ ³˘)♥</span><span class="kao">♡( ◡‿◡ )</span><span class="kao">(っ˘ω˘ς)</span><span class="kao">٩(ˊᗜˋ*)و♡</span><span class="kao">(´｡• ω •｡`)</span><span class="kao">(*´꒳`*)♡</span><span class="kao">(灬♥ω♥灬)</span><span class="kao">(⸝⸝•ᴗ•⸝⸝)੭♡</span><span class="kao">(◍•ᴗ•◍)❤</span><span class="kao">(≧◡≦)♡</span><span class="kao">(๑♡⌓♡๑)</span><span class="kao">(*˘︶˘*).｡*♡</span><span class="kao">˶ᵔ ᵕ ᵔ˶</span><span class="kao">(˘▽˘>ԅ( ˘⌣˘)</span><span class="kao">(ó﹏ò｡)♡</span><span class="kao">(⌯˃̶᷄ ﹏ ˂̶᷄⌯)♡</span>
-          </div>
-          <div class="kao-grid" id="ka-shy">
-            <span class="kao">(///▽///)</span><span class="kao">(/ω＼)</span><span class="kao">(〃∀〃)</span><span class="kao">(//▽//)</span><span class="kao">(*//ω//*)♡</span><span class="kao">(⁄ ⁄•⁄ω⁄•⁄ ⁄)</span><span class="kao">(〃ω〃)</span><span class="kao">(*/▽＼*)</span><span class="kao">(*´∀｀*)ﾉﾞ</span><span class="kao">(*˘˘*)·̆·̆</span><span class="kao">(˶˃ ᵕ ˂˶)</span><span class="kao">(。•́‿•̀。)</span><span class="kao">(*ﾉωﾉ)</span><span class="kao">(｡>////<｡)</span><span class="kao">(⸝⸝⸝´꒳`⸝⸝⸝)</span><span class="kao">(˘⌣˘ʃƪ)</span><span class="kao">(´,,•ω•,,)♡</span><span class="kao">(//▽//)</span>
-          </div>
-          <div class="kao-grid" id="ka-wave">
-            <span class="kao">ヽ(^o^)ノ</span><span class="kao">ヽ(✿ﾟ▽ﾟ)ノ</span><span class="kao">(ﾉ´▽｀)ﾉ</span><span class="kao">٩(ˊᗜˋ*)و</span><span class="kao">(ง •̀_•́)ง</span><span class="kao">ᕦ(ò_óˇ)ᕤ</span><span class="kao">o(≧▽≦)o</span><span class="kao">(ﾉ≧∀≦)ﾉ</span><span class="kao">\(★ω★)/</span><span class="kao">☆ミ(o*･ω･)ﾉ</span><span class="kao">(っ^▿^)۶🎉</span><span class="kao">ヾ(≧▽≦*)o</span><span class="kao">(ﾉ◕ヮ◕)ﾉ*✲ﾟ</span><span class="kao">✧*｡٩(ˊᗜˋ*)و✧*｡</span><span class="kao">ヾ(^∇^)</span><span class="kao">(*˘︶˘*)ﾉ</span><span class="kao">(ﾉ´∀｀)ﾉ</span><span class="kao">\(◦'⌣'◦)/</span>
-          </div>
-          <div class="kao-grid" id="ka-animal">
-            <span class="kao">ʕ•ᴥ•ʔ</span><span class="kao">ʕ•̀ω•ʔ</span><span class="kao">ʕ ᵔᴥᵔ ʔ</span><span class="kao">(ฅ´ω`ฅ)</span><span class="kao">ฅ^•ﻌ•^ฅ</span><span class="kao">(=^･ω･^=)</span><span class="kao">(=^▽^=)</span><span class="kao">ʕ⸝⸝⸝˙Ⱉ˙ʔ</span><span class="kao">₍˄·͈༝·͈˄₎◞</span><span class="kao">ฅ(๑*д*๑)ฅ</span><span class="kao">(〃・ω・〃)</span><span class="kao">( `ω´ )</span><span class="kao">( ᐛ )و</span><span class="kao">ʕ·͡ᴥ·ʔ</span><span class="kao">( ᵔ ᴥ ᵔ )</span><span class="kao">(^・ω・^ )</span><span class="kao">ฅ(=ↀωↀ=)ฅ</span><span class="kao">ʕっ•ᴥ•ʔっ</span>
-          </div>
-          <div class="kao-grid" id="ka-misc">
-            <span class="kao">( ˘ω˘ )</span><span class="kao">(。-ω-)</span><span class="kao">(´-ω-`)</span><span class="kao">(-ω-zzz)</span><span class="kao">(・ω・)</span><span class="kao">(｀・ω・´)</span><span class="kao">(°ロ°)</span><span class="kao">(⊙_⊙)</span><span class="kao">(*ﾟ∀ﾟ*)</span><span class="kao">(¯ . ¯)</span><span class="kao">(¬_¬)</span><span class="kao">(￣ε￣)</span><span class="kao">m(__)m</span><span class="kao">(づ｡◕‿‿◕｡)づ</span><span class="kao">⊂(´･◡･⊂ )∘˚˳°</span><span class="kao">(　-_･) ︻╦╤─</span><span class="kao">(¯﹃¯)</span><span class="kao">(✖﹏✖)</span>
-          </div>
+        <div class="emoji-content">
+          <div class="emoji-grid active" id="eg-heart"><span class="e-char">🩷</span><span class="e-char">❤️</span><span class="e-char">🧡</span><span class="e-char">💛</span><span class="e-char">💚</span><span class="e-char">💙</span><span class="e-char">💜</span><span class="e-char">🖤</span><span class="e-char">🤍</span><span class="e-char">💕</span><span class="e-char">💗</span><span class="e-char">💖</span><span class="e-char">💝</span><span class="e-char">💞</span><span class="e-char">💓</span><span class="e-char">💘</span><span class="e-char">💔</span><span class="e-char">❣️</span><span class="e-char">🫶</span><span class="e-char">🥰</span><span class="e-char">😍</span><span class="e-char">😘</span><span class="e-char">💋</span><span class="e-char">🫰</span><span class="e-char">🤞</span><span class="e-char">🙌</span><span class="e-char">👏</span><span class="e-char">🎀</span></div>
+          <div class="emoji-grid" id="eg-face"><span class="e-char">😊</span><span class="e-char">😄</span><span class="e-char">😁</span><span class="e-char">🤩</span><span class="e-char">🥹</span><span class="e-char">😌</span><span class="e-char">🥺</span><span class="e-char">🤭</span><span class="e-char">😏</span><span class="e-char">😎</span><span class="e-char">🙃</span><span class="e-char">😋</span><span class="e-char">🤗</span><span class="e-char">😇</span><span class="e-char">🫠</span><span class="e-char">🥳</span><span class="e-char">😴</span><span class="e-char">🤔</span><span class="e-char">😂</span><span class="e-char">🤣</span><span class="e-char">😭</span><span class="e-char">😢</span><span class="e-char">🥲</span><span class="e-char">😤</span><span class="e-char">😬</span><span class="e-char">🫡</span><span class="e-char">🤫</span><span class="e-char">😶</span></div>
+          <div class="emoji-grid" id="eg-fashion"><span class="e-char">👗</span><span class="e-char">👘</span><span class="e-char">🥻</span><span class="e-char">👙</span><span class="e-char">🩱</span><span class="e-char">🩳</span><span class="e-char">👚</span><span class="e-char">👕</span><span class="e-char">👖</span><span class="e-char">🧥</span><span class="e-char">👔</span><span class="e-char">👒</span><span class="e-char">🧢</span><span class="e-char">👑</span><span class="e-char">💄</span><span class="e-char">💅</span><span class="e-char">💍</span><span class="e-char">💎</span><span class="e-char">👜</span><span class="e-char">👝</span><span class="e-char">👛</span><span class="e-char">🎒</span><span class="e-char">🕶️</span><span class="e-char">🧣</span><span class="e-char">🧦</span><span class="e-char">👟</span></div>
+          <div class="emoji-grid" id="eg-nature"><span class="e-char">🌸</span><span class="e-char">🌺</span><span class="e-char">🌹</span><span class="e-char">🌷</span><span class="e-char">🌼</span><span class="e-char">🌻</span><span class="e-char">💐</span><span class="e-char">🌿</span><span class="e-char">🍃</span><span class="e-char">🍀</span><span class="e-char">🌱</span><span class="e-char">🪴</span><span class="e-char">🦋</span><span class="e-char">🐝</span><span class="e-char">🌈</span><span class="e-char">☀️</span><span class="e-char">🌙</span><span class="e-char">⭐</span><span class="e-char">🌟</span><span class="e-char">💫</span><span class="e-char">⛅</span><span class="e-char">🌊</span><span class="e-char">🪷</span><span class="e-char">🫧</span><span class="e-char">🌠</span></div>
+          <div class="emoji-grid" id="eg-star"><span class="e-char">✨</span><span class="e-char">🌟</span><span class="e-char">⭐</span><span class="e-char">💫</span><span class="e-char">🌠</span><span class="e-char">🎇</span><span class="e-char">🎆</span><span class="e-char">🪄</span><span class="e-char">🔮</span><span class="e-char">💎</span><span class="e-char">🌙</span><span class="e-char">🌈</span><span class="e-char">🎀</span><span class="e-char">🎁</span><span class="e-char">🎉</span><span class="e-char">🎊</span><span class="e-char">🥂</span><span class="e-char">🍾</span><span class="e-char">🫧</span><span class="e-char">🦄</span><span class="e-char">🪩</span><span class="e-char">🫶</span><span class="e-char">💖</span><span class="e-char">🌸</span></div>
+          <div class="emoji-grid" id="eg-food"><span class="e-char">🍰</span><span class="e-char">🎂</span><span class="e-char">🧁</span><span class="e-char">🍩</span><span class="e-char">🍪</span><span class="e-char">🍫</span><span class="e-char">🍬</span><span class="e-char">🍭</span><span class="e-char">🍦</span><span class="e-char">🧋</span><span class="e-char">🍵</span><span class="e-char">☕</span><span class="e-char">🍓</span><span class="e-char">🍑</span><span class="e-char">🍒</span><span class="e-char">🍇</span><span class="e-char">🍉</span><span class="e-char">🍊</span><span class="e-char">🍋</span><span class="e-char">🥝</span><span class="e-char">🫐</span><span class="e-char">🍎</span><span class="e-char">🧃</span><span class="e-char">🥤</span><span class="e-char">🫖</span></div>
+          <div class="sym-grid" id="sy-heart"><span class="sym-char">♡</span><span class="sym-char">♥</span><span class="sym-char">❤</span><span class="sym-char">❥</span><span class="sym-char">❦</span><span class="sym-char">ღ</span><span class="sym-char">❣</span><span class="sym-char">˚♡</span><span class="sym-char">⸜♡⸝</span><span class="sym-char">ʚɞ</span><span class="sym-char">꒰♡꒱</span><span class="sym-char">˘ᵕ˘</span><span class="sym-char">♡˖꒰ᵕ꒱</span><span class="sym-char">⋆˚✿˖°</span><span class="sym-char">(♡)</span><span class="sym-char">·͜·♡</span></div>
+          <div class="sym-grid" id="sy-star"><span class="sym-char">★</span><span class="sym-char">☆</span><span class="sym-char">✦</span><span class="sym-char">✧</span><span class="sym-char">✩</span><span class="sym-char">✪</span><span class="sym-char">✫</span><span class="sym-char">✬</span><span class="sym-char">✭</span><span class="sym-char">✮</span><span class="sym-char">✯</span><span class="sym-char">✰</span><span class="sym-char">⁂</span><span class="sym-char">✺</span><span class="sym-char">✷</span><span class="sym-char">✶</span><span class="sym-char">⊹</span><span class="sym-char">₊⊹</span><span class="sym-char">*ੈ✩‧₊</span><span class="sym-char">˚✧₊⁺</span><span class="sym-char">ᯓ★</span></div>
+          <div class="sym-grid" id="sy-arrow"><span class="sym-char">→</span><span class="sym-char">←</span><span class="sym-char">↑</span><span class="sym-char">↓</span><span class="sym-char">↗</span><span class="sym-char">↘</span><span class="sym-char">⇒</span><span class="sym-char">⇐</span><span class="sym-char">➤</span><span class="sym-char">➜</span><span class="sym-char">➝</span><span class="sym-char">▶</span><span class="sym-char">◀</span><span class="sym-char">▲</span><span class="sym-char">▼</span><span class="sym-char">↻</span><span class="sym-char">↺</span><span class="sym-char">.ᐟ</span><span class="sym-char">⁀➷</span></div>
+          <div class="sym-grid" id="sy-deco"><span class="sym-char">✿</span><span class="sym-char">❀</span><span class="sym-char">❁</span><span class="sym-char">❂</span><span class="sym-char">✾</span><span class="sym-char">✽</span><span class="sym-char">✼</span><span class="sym-char">❃</span><span class="sym-char">❄</span><span class="sym-char">°</span><span class="sym-char">•</span><span class="sym-char">·</span><span class="sym-char">｡</span><span class="sym-char">♪</span><span class="sym-char">♫</span><span class="sym-char">♬</span><span class="sym-char">𓈊</span><span class="sym-char">𓂃</span><span class="sym-char">𖡼</span><span class="sym-char">ꕤ</span><span class="sym-char">ꕁ</span><span class="sym-char">ꔛ</span><span class="sym-char">※</span><span class="sym-char">†</span></div>
+          <div class="sym-grid" id="sy-bracket"><span class="sym-char">「　」</span><span class="sym-char">『　』</span><span class="sym-char">【　】</span><span class="sym-char">《　》</span><span class="sym-char">〈　〉</span><span class="sym-char">（　）</span><span class="sym-char">꒰　꒱</span><span class="sym-char">⌒⌒</span><span class="sym-char">·͜·</span><span class="sym-char">＊</span><span class="sym-char">~</span></div>
+          <div class="kao-grid" id="ka-happy"><span class="kao">(◕‿◕)</span><span class="kao">( ´ ▽ ` )</span><span class="kao">(＾▽＾)</span><span class="kao">(≧▽≦)</span><span class="kao">(✿◠‿◠)</span><span class="kao">(ﾉ◕ヮ◕)ﾉ</span><span class="kao">✧◝(⁰▿⁰)◜✧</span><span class="kao">(*^▽^*)</span><span class="kao">(⌒▽⌒)☆</span><span class="kao">٩(◕‿◕｡)۶</span><span class="kao">(*≧ω≦*)</span><span class="kao">(o^▽^o)</span><span class="kao">\(^▽^)/</span><span class="kao">(´∀｀)♡</span><span class="kao">(＠＾◡＾)</span></div>
+          <div class="kao-grid" id="ka-love"><span class="kao">(♥ω♥)</span><span class="kao">(｡♥‿♥｡)</span><span class="kao">( ˘ ³˘)♥</span><span class="kao">♡( ◡‿◡ )</span><span class="kao">(っ˘ω˘ς)</span><span class="kao">٩(ˊᗜˋ*)و♡</span><span class="kao">(*´꒳`*)♡</span><span class="kao">(灬♥ω♥灬)</span><span class="kao">(◍•ᴗ•◍)❤</span><span class="kao">(≧◡≦)♡</span><span class="kao">(๑♡⌓♡๑)</span><span class="kao">(*˘︶˘*).｡*♡</span><span class="kao">˶ᵔ ᵕ ᵔ˶</span></div>
+          <div class="kao-grid" id="ka-shy"><span class="kao">(///▽///)</span><span class="kao">(/ω＼)</span><span class="kao">(〃∀〃)</span><span class="kao">(*//ω//*)♡</span><span class="kao">(〃ω〃)</span><span class="kao">(*´∀｀*)ﾉﾞ</span><span class="kao">(*˘˘*)·̆·̆</span><span class="kao">(˶˃ ᵕ ˂˶)</span><span class="kao">(。•́‿•̀。)</span><span class="kao">(*ﾉωﾉ)</span><span class="kao">(｡>////<｡)</span><span class="kao">(⸝⸝⸝´꒳`⸝⸝⸝)</span></div>
+          <div class="kao-grid" id="ka-wave"><span class="kao">ヽ(^o^)ノ</span><span class="kao">ヽ(✿ﾟ▽ﾟ)ノ</span><span class="kao">(ﾉ´▽｀)ﾉ</span><span class="kao">٩(ˊᗜˋ*)و</span><span class="kao">o(≧▽≦)o</span><span class="kao">(ﾉ≧∀≦)ﾉ</span><span class="kao">\(★ω★)/</span><span class="kao">ヾ(≧▽≦*)o</span><span class="kao">(ﾉ◕ヮ◕)ﾉ*✲ﾟ</span><span class="kao">✧*｡٩(ˊᗜˋ*)و✧*｡</span><span class="kao">ヾ(^∇^)</span></div>
+          <div class="kao-grid" id="ka-animal"><span class="kao">ʕ•ᴥ•ʔ</span><span class="kao">ʕ•̀ω•ʔ</span><span class="kao">(ฅ´ω`ฅ)</span><span class="kao">ฅ^•ﻌ•^ฅ</span><span class="kao">(=^･ω･^=)</span><span class="kao">(=^▽^=)</span><span class="kao">ʕ⸝⸝⸝˙Ⱉ˙ʔ</span><span class="kao">₍˄·͈༝·͈˄₎◞</span><span class="kao">(〃・ω・〃)</span><span class="kao">( `ω´ )</span><span class="kao">( ᐛ )و</span><span class="kao">ʕっ•ᴥ•ʔっ</span></div>
+          <div class="kao-grid" id="ka-misc"><span class="kao">( ˘ω˘ )</span><span class="kao">(。-ω-)</span><span class="kao">(´-ω-`)</span><span class="kao">(・ω・)</span><span class="kao">(｀・ω・´)</span><span class="kao">(°ロ°)</span><span class="kao">(⊙_⊙)</span><span class="kao">(*ﾟ∀ﾟ*)</span><span class="kao">(¯ . ¯)</span><span class="kao">(¬_¬)</span><span class="kao">(￣ε￣)</span><span class="kao">m(__)m</span><span class="kao">(づ｡◕‿‿◕｡)づ</span><span class="kao">(¯﹃¯)</span><span class="kao">(✖﹏✖)</span></div>
         </div>
       </div>
     </div>
@@ -475,174 +689,272 @@ select option{background:var(--bg2);color:var(--text)}
 </div>
 
 <script>
-
 /* ── Password ── */
 (function(){
-  const PW = '85078507';
-  const SK = 'vvd_auth';
-  function checkPw(){
-    const v = document.getElementById('pw-input').value;
-    if(v === PW){
-      sessionStorage.setItem(SK,'1');
-      const o = document.getElementById('pw-overlay');
-      o.classList.add('hide');
-      setTimeout(()=>o.remove(), 350);
-    } else {
-      document.getElementById('pw-err').textContent = '密碼錯誤，請再試一次';
-      document.getElementById('pw-input').value = '';
-      document.getElementById('pw-input').focus();
-    }
-  }
-  window.checkPw = checkPw;
-  document.addEventListener('DOMContentLoaded', ()=>{
-    if(sessionStorage.getItem(SK)==='1'){
-      const o = document.getElementById('pw-overlay');
-      if(o) o.remove();
-      return;
-    }
-    document.getElementById('pw-input').addEventListener('keydown', e=>{ if(e.key==='Enter') checkPw(); });
-  });
+  var PW='YOUR_PASSWORD_HERE';var SK='vvd_auth';
+  function checkPw(){var v=document.getElementById('pw-input').value;if(v===PW){sessionStorage.setItem(SK,'1');var o=document.getElementById('pw-overlay');o.classList.add('hide');setTimeout(function(){o.remove()},350)}else{document.getElementById('pw-err').textContent='密碼錯誤，請再試一次';document.getElementById('pw-input').value='';document.getElementById('pw-input').focus()}}
+  window.checkPw=checkPw;
+  document.addEventListener('DOMContentLoaded',function(){if(sessionStorage.getItem(SK)==='1'){var o=document.getElementById('pw-overlay');if(o)o.remove();return}document.getElementById('pw-input').addEventListener('keydown',function(e){if(e.key==='Enter')checkPw()})});
 })();
 
-/* ─── Data ─── */
-const typeLabels={ig_caption:'IG 貼文',threads:'Threads',flash_sale:'限時閃購',new_arrival:'新品上架',livestream:'直播預告',collab:'聯名宣傳',store_event:'門市活動',brand_story:'品牌故事'};
-const toneHints={warm:'適合日常商品介紹、品牌理念傳遞',playful:'適合輕鬆新品、組合優惠、限時活動',confident:'適合品牌宣言、聯名發佈、里程碑',emotional:'適合創辦人故事、品牌週年、棉花糖女孩認同感',urgent:'適合限時閃購、倒數促銷、最後庫存'};
-const toneMap={warm:'溫暖真誠，像好朋友說話，不誇張，有真實感',playful:'輕鬆俏皮，有點小幽默，活潑不做作',confident:'自信有力，直接，肯定，有品牌態度',emotional:'感性共鳴，貼近棉花糖女孩的內心感受，讓人有被理解的感覺',urgent:'製造緊迫感，強調限時、數量有限，但不失真'};
-const typeMap={ig_caption:'Instagram 貼文文案，包含 caption 正文與結尾 hashtag，適合圖片搭配',threads:'Threads 短貼文，150字以內，輕鬆隨意，像創辦人隨手發的那種',flash_sale:'限時閃購公告，強調優惠力道、時間緊迫性、下單呼籲',new_arrival:'新品上架文案，帶出商品特色，讓人想立刻看看',livestream:'直播預告文，告知時間、主打商品，讓粉絲有期待感',collab:'聯名系列宣傳文，帶出合作精神與限定感',store_event:'門市活動宣傳，帶出地點、時間、活動亮點',brand_story:'品牌故事型文案，傳遞 VV DOUBLE 的理念與創辦人精神'};
-const lengthHints={short:'50–100 字，一句話抓眼球，適合限動、Threads 隨手發',mid:'適合 IG、Threads 搭配圖片，100–180 字',long:'200 字以上，適合品牌故事、新品詳細介紹、官網文案'};
-const lengthMap={short:'短文，50–100字以內，精簡有力，一句話到位，不囉嗦',mid:'中等長度，100–180字，有完整起承轉合，適合 IG caption',long:'長文，200字以上，有故事鋪陳、商品細節、情感共鳴，適合品牌深度內容'};
-const voiceMap={vvn:{label:'VVN 本人',instruction:'以創辦人 Vivian（VVN）第一人稱「我」的口吻寫作。語氣真實、直接、有個人故事感，像在跟老朋友說話。'},brand:{label:'VV DOUBLE 品牌',instruction:'以 VV DOUBLE 品牌角度，用「我們」出發寫作。語氣有品牌主張感，代表整個團隊說話。'},editor:{label:'小編',instruction:'以輕鬆活潑的小編口吻寫作，可以用「大家」、「水水們」、「棉花糖女孩們」稱呼受眾。語氣可愛、親切。'},customer:{label:'客人分享',instruction:'模擬一位真實的 VV DOUBLE 顧客，以第一人稱「我」分享穿搭心得或購物體驗。語氣要像真人隨手發文，自然、真實。'}};
+/* ── Module switch ── */
+var curMod='ig';
+var modTitles={ig:'IG / Threads 文案',line:'LINE 推播文案',sms:'簡訊文案',flow:'Welcome Flow 訊息',kol:'素人口碑範本'};
+function switchMod(el){
+  var mod=el.dataset.mod;
+  if(mod===curMod)return;
+  curMod=mod;
+  document.querySelectorAll('.nav-item[data-mod]').forEach(function(n){n.classList.remove('active')});
+  el.classList.add('active');
+  document.querySelectorAll('.mod-panel').forEach(function(p){p.classList.remove('show')});
+  document.getElementById('mod-'+mod).classList.add('show');
+  document.getElementById('mod-title').textContent=modTitles[mod]||'文案產生器';
+  clearResults();
+}
 
-const productPlaceholders=['例：雪紡吊帶洋裝','例：牛仔寬褲','例：法式荷葉袖上衣','例：針織開襟外套','例：蛋糕短裙','例：燈心絨刺繡襯衫','例：抽繩尼龍長裙','例：雙十二閃購活動','例：黃小愛聯名新品','例：春季新品上架'];
-const extraPlaceholders=['例：顯瘦版型、深藍和白色、定價 $899','例：棉質彈性、XL-5L、定價 $790','例：限量 50 件、今晚 12 點開賣','例：適合上班穿、有黑色和杏色','例：搭配同系列長裙效果更好','例：週末限定、全館 85 折','例：超顯腿長、後鬆緊腰設計','例：輕薄透氣、夏天必備','例：聯名限定款、只有官網有','例：門市試穿超好評、補貨一次'];
+/* ── Theme ── */
+function setTheme(el){document.body.className=el.dataset.theme;document.querySelectorAll('.theme-swatch').forEach(function(s){s.classList.remove('active')});el.classList.add('active');localStorage.setItem('vvd_theme',el.dataset.theme)}
 
-let selType='ig_caption',selTone='warm',selVoice='vvn',selLength='mid';
-let selTags=['#VVDOUBLE','#大尺碼不是特例','#肉肉女孩'];
+/* ── State variables ── */
+var selType='ig_caption',selTone='warm',selVoice='vvn',selLength='mid',selAudience='cold';
+var selTags=['#VVDOUBLE','#大尺碼不是特例','#肉肉女孩'];
+var selLinePurpose='new_arrival',selLineLength='50',selLineLink='official';
+var selSmsPurpose='vip_wake',selSmsLength='50';
+var selFlowDay='day0',selFlowChannel='line';
+var selKolType='unbox',selKolPlatform='threads',selKolDisclose='light';
 
-/* ─── Helpers ─── */
+var toneHints={warm:'適合日常商品介紹、品牌理念傳遞',playful:'適合輕鬆新品、組合優惠、限時活動',confident:'適合品牌宣言、聯名發佈、里程碑',emotional:'適合創辦人故事、品牌週年、棉花糖女孩認同感',urgent:'適合限時閃購、倒數促銷、最後庫存'};
+var toneMap={warm:'溫暖真誠，像好朋友說話，不誇張，有真實感',playful:'輕鬆俏皮，有點小幽默，活潑不做作',confident:'自信有力，直接，肯定，有品牌態度',emotional:'感性共鳴，貼近棉花糖女孩的內心感受，讓人有被理解的感覺',urgent:'製造緊迫感，強調限時、數量有限，但不失真'};
+var typeLabels={ig_caption:'IG 貼文',threads:'Threads',flash_sale:'限時閃購',new_arrival:'新品上架',livestream:'直播預告',collab:'聯名宣傳',store_event:'門市活動',brand_story:'品牌故事',theme_plan:'主題企劃'};
+var typeMap={ig_caption:'Instagram 貼文文案，包含 caption 正文與結尾 hashtag',threads:'Threads 短貼文，150字以內，輕鬆隨意，像創辦人隨手發的那種',flash_sale:'限時閃購公告，強調優惠力道、時間緊迫性、下單呼籲',new_arrival:'新品上架文案，帶出商品特色，讓人想立刻看看',livestream:'直播預告文，告知時間、主打商品，讓粉絲有期待感',collab:'聯名系列宣傳文，帶出合作精神與限定感',store_event:'門市活動宣傳，帶出地點、時間、活動亮點',brand_story:'品牌故事型文案，傳遞 VV DOUBLE 的理念與創辦人精神',theme_plan:'主題企劃文案，以情境帶出既有商品購買動機（通勤週、約會週、旅遊週等）'};
+var lengthHints={short:'50–100 字，一句話抓眼球，適合限動、Threads 隨手發',mid:'適合 IG、Threads 搭配圖片，100–180 字',long:'200 字以上，適合品牌故事、新品詳細介紹、官網文案'};
+var lengthMap={short:'短文，50–100字以內，精簡有力，一句話到位',mid:'中等長度，100–180字，有完整起承轉合，適合 IG caption',long:'長文，200字以上，有故事鋪陳、商品細節、情感共鳴'};
+var voiceMap={vvn:{label:'VVN 本人',instruction:'以創辦人 Vivian（VVN）第一人稱「我」的口吻寫作。語氣真實、直接、有個人故事感，像在跟老朋友說話。'},brand:{label:'VV DOUBLE 品牌',instruction:'以 VV DOUBLE 品牌角度，用「我們」出發寫作。語氣有品牌主張感，代表整個團隊說話。'},editor:{label:'小編',instruction:'以輕鬆活潑的小編口吻寫作，可以用「水水們」、「棉花糖女孩們」稱呼受眾。語氣可愛、親切。'},customer:{label:'客人分享',instruction:'模擬一位真實的 VV DOUBLE 顧客，以第一人稱「我」分享穿搭心得。語氣要像真人隨手發文，自然、真實。'}};
+var audienceMap={cold:{label:'陌生觸及',instruction:'受眾從未接觸過 VV DOUBLE，不預設對方認識品牌。重點是吸引注意、建立第一印象，語氣要引發好奇心，不要預設任何共同記憶。'},warm:{label:'潛在新客',instruction:'受眾看過廣告或互動過，但還沒買。他們知道品牌存在，需要一個具體的下單理由。可以強調商品特色和首購誘因。'},new:{label:'新客',instruction:'受眾剛完成第一次購買。語氣溫暖迎接，建立信任感，讓他們覺得選擇 VV DOUBLE 是對的決定。'},existing:{label:'既有客',instruction:'受眾是回購客或活躍會員，對品牌有熟悉感。語氣要像老朋友，帶出新品優先、回購動機，可以有一點默契感。'},dormant:{label:'沈睡 / 流失客',instruction:'受眾曾經購買但很久沒回來。語氣是「好久不見」，要給一個明確的回來理由。避免說教，保持溫暖但有誘因。'}};
+
+var productPlaceholders=['例：雪紡吊帶洋裝','例：牛仔寬褲','例：法式荷葉袖上衣','例：針織開襟外套','例：蛋糕短裙','例：黃小愛聯名新品','例：春季新品上架'];
+var extraPlaceholders=['例：顯瘦版型、深藍和白色、定價 $899','例：限量 50 件、今晚 12 點開賣','例：適合上班穿、有黑色和杏色','例：週末限定、全館 85 折','例：超顯腿長、後鬆緊腰設計'];
+
 function randomFrom(arr){return arr[Math.floor(Math.random()*arr.length)]}
-function insertAtCursor(text){const ta=document.getElementById('editor-textarea');const s=ta.selectionStart,e=ta.selectionEnd;ta.value=ta.value.slice(0,s)+text+ta.value.slice(e);ta.selectionStart=ta.selectionEnd=s+text.length;ta.focus();updateEditorCount()}
+function insertAtCursor(text){var ta=document.getElementById('editor-textarea');var s=ta.selectionStart,e=ta.selectionEnd;ta.value=ta.value.slice(0,s)+text+ta.value.slice(e);ta.selectionStart=ta.selectionEnd=s+text.length;ta.focus();updateEditorCount()}
 
-/* ─── Theme ─── */
-function setTheme(el){document.body.className=el.dataset.theme;document.querySelectorAll('.theme-swatch').forEach(s=>s.classList.remove('active'));el.classList.add('active');localStorage.setItem('vvd_theme',el.dataset.theme)}
+/* ── Pills ── */
+function initPills(id,single,cb){var el=document.getElementById(id);if(!el)return;el.querySelectorAll('.pill').forEach(function(p){p.addEventListener('click',function(){if(single){el.querySelectorAll('.pill').forEach(function(x){x.classList.remove('active')});p.classList.add('active')}else{p.classList.toggle('active')}cb()})})}
 
-/* ─── Pills ─── */
-function initPills(id,single,cb){document.getElementById(id).querySelectorAll('.pill').forEach(p=>{p.addEventListener('click',()=>{if(single){document.getElementById(id).querySelectorAll('.pill').forEach(x=>x.classList.remove('active'));p.classList.add('active')}else{p.classList.toggle('active')}cb()});});};
+initPills('type-group',true,function(){var a=document.querySelector('#type-group .pill.active');selType=a?a.dataset.value:'ig_caption'});
+initPills('tone-group',true,function(){var a=document.querySelector('#tone-group .pill.active');selTone=a?a.dataset.value:'warm';document.getElementById('tone-hint').textContent=toneHints[selTone]||''});
+initPills('hashtag-group',false,function(){selTags=Array.from(document.querySelectorAll('#hashtag-group .pill.active')).map(function(p){return p.dataset.value})});
+initPills('length-group',true,function(){var a=document.querySelector('#length-group .pill.active');selLength=a?a.dataset.value:'mid';document.getElementById('length-hint').textContent=lengthHints[selLength]||''});
+initPills('line-purpose-group',true,function(){var a=document.querySelector('#line-purpose-group .pill.active');selLinePurpose=a?a.dataset.value:'new_arrival'});
+initPills('line-length-group',true,function(){var a=document.querySelector('#line-length-group .pill.active');selLineLength=a?a.dataset.value:'50'});
+initPills('line-link-group',true,function(){var a=document.querySelector('#line-link-group .pill.active');selLineLink=a?a.dataset.value:'official'});
+initPills('sms-purpose-group',true,function(){var a=document.querySelector('#sms-purpose-group .pill.active');selSmsPurpose=a?a.dataset.value:'vip_wake'});
+initPills('sms-length-group',true,function(){var a=document.querySelector('#sms-length-group .pill.active');selSmsLength=a?a.dataset.value:'50'});
+initPills('flow-channel-group',true,function(){var a=document.querySelector('#flow-channel-group .pill.active');selFlowChannel=a?a.dataset.value:'line'});
+initPills('kol-platform-group',true,function(){var a=document.querySelector('#kol-platform-group .pill.active');selKolPlatform=a?a.dataset.value:'threads'});
+initPills('kol-disclose-group',true,function(){var a=document.querySelector('#kol-disclose-group .pill.active');selKolDisclose=a?a.dataset.value:'light'});
 
-initPills('type-group',true,()=>{const a=document.querySelector('#type-group .pill.active');selType=a?a.dataset.value:'ig_caption'});
-initPills('tone-group',true,()=>{const a=document.querySelector('#tone-group .pill.active');selTone=a?a.dataset.value:'warm';document.getElementById('tone-hint').textContent=toneHints[selTone]||''});
-initPills('hashtag-group',false,()=>{selTags=[...document.querySelectorAll('#hashtag-group .pill.active')].map(p=>p.dataset.value)});
-initPills('length-group',true,()=>{const a=document.querySelector('#length-group .pill.active');selLength=a?a.dataset.value:'mid';document.getElementById('length-hint').textContent=lengthHints[selLength]||''});
-
-document.getElementById('voice-group').querySelectorAll('.voice-card').forEach(card=>{card.addEventListener('click',()=>{document.getElementById('voice-group').querySelectorAll('.voice-card').forEach(c=>c.classList.remove('active'));card.classList.add('active');selVoice=card.dataset.value})});
+document.getElementById('voice-group').querySelectorAll('.voice-card').forEach(function(card){card.addEventListener('click',function(){document.getElementById('voice-group').querySelectorAll('.voice-card').forEach(function(c){c.classList.remove('active')});card.classList.add('active');selVoice=card.dataset.value})});
+document.getElementById('audience-group').querySelectorAll('.aud-card').forEach(function(card){card.addEventListener('click',function(){document.getElementById('audience-group').querySelectorAll('.aud-card').forEach(function(c){c.classList.remove('active')});card.classList.add('active');selAudience=card.dataset.value})});
+document.getElementById('flow-day-group').querySelectorAll('.flow-day').forEach(function(day){day.addEventListener('click',function(){document.getElementById('flow-day-group').querySelectorAll('.flow-day').forEach(function(d){d.classList.remove('active')});day.classList.add('active');selFlowDay=day.dataset.value})});
+document.getElementById('kol-type-group').querySelectorAll('.kol-card').forEach(function(card){card.addEventListener('click',function(){document.getElementById('kol-type-group').querySelectorAll('.kol-card').forEach(function(c){c.classList.remove('active')});card.classList.add('active');selKolType=card.dataset.value})});
 document.getElementById('extra-info').addEventListener('input',function(){if(this.value.length>200)this.value=this.value.slice(0,200);document.getElementById('char-count').textContent=this.value.length+' / 200'});
 
-/* ─── API Key ─── */
-function saveKey(){const k=document.getElementById('api-key').value.trim();if(!k||k.length<20){alert('Key 格式不對，請重新確認');return}localStorage.setItem('vvd_key',k);showKeySaved()}
+/* ── API Key ── */
+function saveKey(){var k=document.getElementById('api-key').value.trim();if(!k||k.length<10){alert('請貼上正確的 API Key');return}localStorage.setItem('vvd_key',k);showKeySaved()}
 function showKeySaved(){document.getElementById('key-block').className='key-block hidden form-block';document.getElementById('key-saved-badge').classList.add('show')}
 function editKey(){document.getElementById('key-block').className='key-block visible form-block';document.getElementById('key-saved-badge').classList.remove('show')}
 function getKey(){return localStorage.getItem('vvd_key')||document.getElementById('api-key').value.trim()}
 
-/* ─── History ─── */
-const HIST_KEY='vvd_history';
-function loadHistory(){try{return JSON.parse(localStorage.getItem(HIST_KEY))||[]}catch{return[]}}
-function saveHistory(list){localStorage.setItem(HIST_KEY,JSON.stringify(list))}
-function formatTime(ts){const d=new Date(ts);return String(d.getMonth()+1).padStart(2,'0')+'/'+String(d.getDate()).padStart(2,'0')+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')}
-function addToHistory(entries,meta){const list=loadHistory();list.unshift({id:Date.now(),ts:Date.now(),meta,entries});if(list.length>30)list.pop();saveHistory(list);renderSidebar()}
-function renderSidebar(){const list=loadHistory();const el=document.getElementById('sidebar-list');if(list.length===0){el.innerHTML='<div class="sidebar-empty">還沒有紀錄</div>';return}el.innerHTML='';list.forEach((item,idx)=>{const div=document.createElement('div');div.className='sidebar-item';div.innerHTML=`<div class="sidebar-item-meta"><span class="sidebar-item-tag">${item.meta.type}</span><span class="sidebar-item-time">${formatTime(item.ts)}</span></div><div class="sidebar-item-preview">${(item.entries[0]||'').replace(/</g,'&lt;')}</div>`;div.addEventListener('click',()=>openHistoryItem(idx));el.appendChild(div)})}
-function openHistoryItem(idx){const list=loadHistory();const item=list[idx];if(!item)return;document.querySelectorAll('.sidebar-item').forEach((el,i)=>el.classList.toggle('active-item',i===idx));const panel=document.getElementById('history-panel');document.getElementById('history-panel-label').textContent=`${item.meta.type} · ${item.meta.voice} · ${formatTime(item.ts)}`;const cards=document.getElementById('history-panel-cards');cards.innerHTML='';item.entries.forEach((text,i)=>{
-      const card=document.createElement('div');card.className='result-card';card.style.marginBottom='10px';
-      const tag=document.createElement('div');tag.className='result-tag';tag.textContent=item.meta.type+' · '+item.meta.voice+' · 版本 '+(i+1);
-      const body=document.createElement('div');body.className='result-text';body.textContent=text;
-      const btns=document.createElement('div');btns.className='result-card-btns';
-      const sendBtn=document.createElement('button');sendBtn.className='send-editor-btn';sendBtn.textContent='送入編輯區';sendBtn.addEventListener('click',()=>sendToEditor(text));
-      const copyBtn=document.createElement('button');copyBtn.className='copy-btn';copyBtn.textContent='複製';copyBtn.addEventListener('click',()=>copyText(copyBtn,text));
-      btns.appendChild(sendBtn);btns.appendChild(copyBtn);
-      card.appendChild(tag);card.appendChild(body);card.appendChild(btns);
-      cards.appendChild(card);
-    });panel.classList.add('show');panel.scrollIntoView({behavior:'smooth',block:'start'})}
-function closeHistoryPanel(){document.getElementById('history-panel').classList.remove('show');document.querySelectorAll('.sidebar-item').forEach(el=>el.classList.remove('active-item'))}
-function clearHistory(){if(!confirm('確定要清除所有歷史紀錄？'))return;localStorage.removeItem(HIST_KEY);renderSidebar();closeHistoryPanel()}
-function toggleSidebar(){document.getElementById('sidebar').classList.toggle('open')}
+/* ── Build Prompts ── */
+function buildPromptIG(){
+  var product=document.getElementById('product-name').value.trim();
+  var extra=document.getElementById('extra-info').value.trim();
+  var count=document.getElementById('ig-count').value;
+  var hashtags=selTags.join(' ');
+  var voice=voiceMap[selVoice];
+  var audience=audienceMap[selAudience];
+  return '你是 VV DOUBLE 的專屬品牌文案師。VV DOUBLE 是台灣中大尺碼女裝品牌，品牌精神「大尺碼不是特例，而是我的日常」，受眾稱呼「棉花糖女孩」或「肉肉女孩」，Made with 100% pure heart。創辦人 Vivian（VVN）本身是大尺碼，品牌從自身出發設計。\n\n請產生 '+count+' 則'+(typeLabels[selType]||'IG貼文')+'文案：\n- 類型：'+(typeMap[selType]||'IG貼文')+'\n- 受眾：'+audience.label+'｜'+audience.instruction+'\n- 發文視角：'+voice.instruction+'\n- 語氣：'+toneMap[selTone]+'\n- 文案長度：'+lengthMap[selLength]+'\n- 商品/活動：'+(product||'品牌日常貼文，自由發揮')+'\n- 補充：'+(extra||'無')+'\n- 結尾加上：'+(hashtags||'不加 hashtag')+'\n- 絕對不能使用「——」破折號\n- 每則用「---」分隔，不加編號或標題\n- 繁體中文，台灣用語，不要 AI 感'
+}
 
-/* ─── Generate ─── */
-function buildPrompt(){const product=document.getElementById('product-name').value.trim();const extra=document.getElementById('extra-info').value.trim();const count=document.getElementById('count-select').value;const hashtags=selTags.join(' ');const voice=voiceMap[selVoice];return`你是 VV DOUBLE 的專屬品牌文案師。VV DOUBLE 是台灣中大尺碼女裝品牌，品牌精神「大尺碼不是特例，而是我的日常」，受眾稱呼「棉花糖女孩」或「肉肉女孩」，Made with 100% pure heart，不因尺碼犧牲設計細節。創辦人 Vivian（VVN）本身是大尺碼，品牌從自身出發設計。\n\n請產生 ${count} 則${typeLabels[selType]}文案：\n- 類型：${typeMap[selType]}\n- 語氣：${toneMap[selTone]}\n- 發文視角：${voice.instruction}\n- 文案長度：${lengthMap[selLength]}\n- 商品/活動：${product||'品牌日常貼文，自由發揮'}\n- 補充：${extra||'無'}\n- 結尾加上：${hashtags||'不加 hashtag'}\n- 絕對不能使用「——」破折號\n- 每則用「---」分隔，不加編號或標題\n- 繁體中文，台灣用語，不要 AI 感`}
+function buildPromptLINE(){
+  var offer=document.getElementById('line-offer').value.trim();
+  var extra=document.getElementById('line-extra').value.trim();
+  var count=document.getElementById('line-count').value;
+  var purposeMap={new_arrival:'上新通知，讓收到的人想立刻點進去看新品',dormant:'喚醒沈睡客，語氣是「好久不見」，輕推，給一個回來看看的理由',lost:'喚醒流失客，給一個明確的回來理由（新款式、尺寸更齊、專屬優惠），語氣直接但不冷漠',vip:'Top VIP 客專屬通知，強調專屬感和搶先體驗，少談折扣，走尊榮路線',member_day:'會員日或限時加購活動，強調限時性和專屬優惠，製造緊迫感',repurchase:'二次購誘因，針對曾購買的客人，給一個回購的具體理由'};
+  var linkMap={official:'（結尾加上官網連結佔位符 {{官網連結}}）',event:'（結尾加上活動頁連結佔位符 {{活動連結}}）',none:''};
+  return '你是 VV DOUBLE 的 LINE 推播文案師。VV DOUBLE 是台灣中大尺碼女裝品牌，品牌精神「大尺碼不是特例，而是我的日常」，受眾稱呼「棉花糖女孩」或「肉肉女孩」。\n\n請產生 '+count+' 則 LINE 推播訊息：\n- 推播目的：'+(purposeMap[selLinePurpose]||'')+'\n- 字數限制：'+selLineLength+'字以內，精簡有力\n- 優惠資訊：'+(offer||'無')+'\n- 補充：'+(extra||'無')+'\n- 連結：'+(linkMap[selLineLink]||'')+'\n- 語氣自然親切，像朋友傳訊息，不要官腔\n- 絕對不能使用「——」破折號\n- 每則用「---」分隔，不加編號或標題\n- 繁體中文，台灣用語'
+}
 
+function buildPromptSMS(){
+  var offer=document.getElementById('sms-offer').value.trim();
+  var count=document.getElementById('sms-count').value;
+  var purposeMap={vip_wake:'Top VIP 客喚醒，強調專屬感，少談折扣，走搶先體驗路線',new_arrival:'上新通知，讓收到的人想立刻點進去',flash:'限時閃購，強調時間緊迫，要讓人立刻行動',member_day:'會員日活動，強調專屬優惠和限時性'};
+  return '你是 VV DOUBLE 的簡訊文案師。VV DOUBLE 是台灣中大尺碼女裝品牌。\n\n請產生 '+count+' 則簡訊文案：\n- 目的：'+(purposeMap[selSmsPurpose]||'')+'\n- 字數：嚴格限制在 '+selSmsLength+' 字以內（簡訊限制）\n- 優惠：'+(offer||'無')+'\n- 結尾加上官網連結佔位符 {{連結}}\n- 語氣直接、有行動呼籲\n- 絕對不能使用「——」破折號\n- 每則用「---」分隔\n- 繁體中文，台灣用語'
+}
+
+function buildPromptFlow(){
+  var offer=document.getElementById('flow-offer').value.trim();
+  var count=document.getElementById('flow-count').value;
+  var dayMap={
+    day0:{label:'第 0 天',task:'感謝 + 導進 LINE',instruction:'顧客剛下單，感謝他選擇 VV DOUBLE，語氣溫暖真誠。帶出品牌理念「不做放大版，每件都為肉肉女孩重新打版」。引導他加入 LINE 官方帳號，到貨後會有穿搭建議。不推銷任何商品。'},
+    day5:{label:'第 5–7 天',task:'純給價值，不推銷',instruction:'顧客應該剛收到商品。純粹提供到貨後的穿搭建議或保養方式，不提任何商品推薦或優惠。語氣像朋友在關心，讓顧客感受到品牌的用心。'},
+    day14:{label:'第 14 天',task:'邀曬單 + 收 UGC',instruction:'邀請顧客分享穿搭照片，可以 tag VV DOUBLE 或用特定 hashtag。語氣輕鬆不強迫，強調真實身形的美，讓他們覺得分享是件驕傲的事。'},
+    day30:{label:'第 30–40 天',task:'二次購誘因',instruction:'顧客進入回購黃金窗口。給一個明確的回購理由，可以搭配優惠。語氣像老朋友叫回來，不要太業務感。'},
+    day50:{label:'第 50–54 天',task:'最後提醒，窗口關閉',instruction:'優惠或窗口即將關閉，製造輕度緊迫感。語氣是「最後提醒你一次」，不強迫但讓人知道錯過就沒有了。'}
+  };
+  var day=dayMap[selFlowDay];
+  var channelMap={line:'LINE 訊息，語氣像朋友傳訊息，可以稍長',sms:'簡訊，字數嚴格控制在 70 字以內'};
+  return '你是 VV DOUBLE 的 Welcome Flow 文案師。VV DOUBLE 是台灣中大尺碼女裝品牌，品牌精神「大尺碼不是特例，而是我的日常」，Made with 100% pure heart。目標是把新客從「只買一次」養成「會回購的人」，54天內的五個觸點自動化訊息。\n\n請產生 '+count+' 則 Welcome Flow 訊息：\n- 觸點：'+day.label+'（'+day.task+'）\n- 任務說明：'+day.instruction+'\n- 通路：'+(channelMap[selFlowChannel]||'')+'\n- 優惠資訊：'+(offer||'無（若此觸點不需要優惠請忽略）')+'\n- 語氣真實，有溫度，不要像系統自動發的罐頭訊息\n- 絕對不能使用「——」破折號\n- 每則用「---」分隔，不加編號或標題\n- 繁體中文，台灣用語'
+}
+
+function buildPromptKOL(){
+  var product=document.getElementById('kol-product').value.trim();
+  var code=document.getElementById('kol-code').value.trim();
+  var extra=document.getElementById('kol-extra').value.trim();
+  var count=document.getElementById('kol-count').value;
+  var typeInst={unbox:'素人開箱文案：真實、自然、像朋友在說話。不要過度誇張，要有真實的使用感受。輕輕帶出品牌，不要像廣告。',outfit:'穿搭分享文案：以情境出發，描述在什麼場合穿、搭配什麼，讓人對穿搭有畫面感。',review:'穿後心得文案：重點是版型、材質、上身感受，特別強調「肉肉女孩穿起來的感覺」，真實、有說服力。',discount:'折扣碼推薦文案：自然帶出折扣碼，有行動呼籲（限時、限量感），但不要太廣告感。'};
+  var platformMap={threads:'Threads 貼文，文字為主，可以長一點，口吻輕鬆隨意',ig_story:'IG 限動文字，精簡，重點突出，適合搭配照片',ig_post:'IG 貼文 caption，有適當的 hashtag 和表情符號'};
+  var discloseMap={light:'輕揭露：自然提及品牌或商品，不明確說是合作，像朋友推薦的語氣',clear:'明確標示：開頭或結尾標示「#合作」或「#業配」，但其他內容要真實自然'};
+  return '你是在幫 VV DOUBLE 的素人合作夥伴撰寫社群發文範本。VV DOUBLE 是台灣中大尺碼女裝品牌，品牌精神「大尺碼不是特例，而是我的日常」，受眾是棉花糖女孩 / 肉肉女孩。\n\n注意：這是給素人看的「範例參考」，不是品牌官方文案。語氣要像真實素人發文，不要有品牌官方感。\n\n請產生 '+count+' 則素人發文範本：\n- 文案類型：'+(typeInst[selKolType]||'')+'\n- 發文平台：'+(platformMap[selKolPlatform]||'')+'\n- 揭露方式：'+(discloseMap[selKolDisclose]||'')+'\n- 商品：'+(product||'（未指定，請自由發揮）')+'\n- 折扣碼：'+(code?'使用折扣碼 '+code:'無折扣碼')+'\n- 補充：'+(extra||'無')+'\n- 絕對不能使用「——」破折號，不要太官方、不要誇張浮誇\n- 每則用「---」分隔，不加編號或標題\n- 繁體中文，台灣口語'
+}
+
+function buildPrompt(){
+  if(curMod==='ig')return buildPromptIG();
+  if(curMod==='line')return buildPromptLINE();
+  if(curMod==='sms')return buildPromptSMS();
+  if(curMod==='flow')return buildPromptFlow();
+  if(curMod==='kol')return buildPromptKOL();
+  return buildPromptIG();
+}
+
+function getCount(){
+  var countIds={ig:'ig-count',line:'line-count',sms:'sms-count',flow:'flow-count',kol:'kol-count'};
+  var el=document.getElementById(countIds[curMod]);
+  return el?parseInt(el.value):3;
+}
+
+function getModLabel(){
+  if(curMod==='ig')return(typeLabels[selType]||'IG')+' · '+(audienceMap[selAudience]?audienceMap[selAudience].label:'');
+  if(curMod==='line')return 'LINE · '+selLinePurpose;
+  if(curMod==='sms')return '簡訊 · '+selSmsPurpose;
+  if(curMod==='flow'){var dm={day0:'第0天',day5:'第5-7天',day14:'第14天',day30:'第30-40天',day50:'第50-54天'};return 'Flow · '+(dm[selFlowDay]||'')}
+  if(curMod==='kol')return '素人口碑 · '+selKolType;
+  return '文案';
+}
+
+/* ── Generate ── */
 async function generate(){
-  const key=getKey();
-  if(!key||key.length<20){const e=document.getElementById('err-msg');e.textContent='請先輸入並儲存 API Key';e.classList.add('show');return}
-  const btn=document.getElementById('gen-btn');
-  const ra=document.getElementById('results-area');
-  const rl=document.getElementById('results-list');
-  const em=document.getElementById('err-msg');
+  var key=getKey();
+  if(!key||key.length<10){var e=document.getElementById('err-msg');e.textContent='請先輸入並儲存 API Key';e.classList.add('show');return}
+  var btn=document.getElementById('gen-btn');
+  var ra=document.getElementById('results-area');
+  var rl=document.getElementById('results-list');
+  var em=document.getElementById('err-msg');
   em.classList.remove('show');
   btn.disabled=true;btn.textContent='產生中...';
-  rl.innerHTML='<div class="loading-row"><div class="dot-loader"><span></span><span></span><span></span></div>正在生成品牌文案...</div>';
+  rl.innerHTML='<div class="loading-row"><div class="dot-loader"><span></span><span></span><span></span></div>正在生成文案...</div>';
   ra.classList.add('show');
   try{
-    const cleanKey=key.trim().replace(/[^\x20-\x7E]/g,'');
-    const hdrs=new Headers();
+    var cleanKey=key.trim().replace(/[^\x20-\x7E]/g,'');
+    var hdrs=new Headers();
     hdrs.append('Content-Type','application/json');
     hdrs.append('x-api-key',cleanKey);
     hdrs.append('anthropic-version','2023-06-01');
     hdrs.append('anthropic-dangerous-direct-browser-access','true');
-    const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:hdrs,body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1500,messages:[{role:'user',content:buildPrompt()}]})});
-    const data=await res.json();
-    if(!res.ok)throw new Error(data.error?.message||'API 錯誤 '+res.status);
-    const raw=data.content.map(b=>b.text||'').join('');
-    const parts=raw.split(/\n---+\n?/).map(s=>s.trim()).filter(Boolean);
-    const count=parseInt(document.getElementById('count-select').value);
+    var res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:hdrs,body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:2000,messages:[{role:'user',content:buildPrompt()}]})});
+    var data=await res.json();
+    if(!res.ok)throw new Error(data.error?data.error.message:'API 錯誤 '+res.status);
+    var raw=data.content.map(function(b){return b.text||''}).join('');
+    var parts=raw.split(/\n---+\n?/).map(function(s){return s.trim()}).filter(Boolean);
+    var count=getCount();
     rl.innerHTML='';
-    const display=parts.slice(0,count);
-    display.forEach((text,i)=>{
-      const card=document.createElement('div');card.className='result-card';
-      const tag=document.createElement('div');tag.className='result-tag';tag.textContent=typeLabels[selType]+' · '+voiceMap[selVoice].label+' · 版本 '+(i+1);
-      const body=document.createElement('div');body.className='result-text';body.textContent=text;
-      const btns=document.createElement('div');btns.className='result-card-btns';
-      const sendBtn=document.createElement('button');sendBtn.className='send-editor-btn';sendBtn.textContent='送入編輯區';sendBtn.addEventListener('click',()=>sendToEditor(text));
-      const copyBtn=document.createElement('button');copyBtn.className='copy-btn';copyBtn.textContent='複製';copyBtn.addEventListener('click',()=>copyText(copyBtn,text));
+    var display=parts.slice(0,count);
+    var modLabel=getModLabel();
+    display.forEach(function(text,i){
+      var card=document.createElement('div');card.className='result-card';
+      var tag=document.createElement('div');tag.className='result-tag';tag.textContent=modLabel+' · 版本 '+(i+1);
+      var body=document.createElement('div');body.className='result-text';body.textContent=text;
+      var btns=document.createElement('div');btns.className='result-card-btns';
+      var sendBtn=document.createElement('button');sendBtn.className='send-editor-btn';sendBtn.textContent='送入編輯區';
+      sendBtn.addEventListener('click',(function(t){return function(){sendToEditor(t)}})(text));
+      var copyBtn=document.createElement('button');copyBtn.className='copy-btn';copyBtn.textContent='複製';
+      copyBtn.addEventListener('click',(function(b,t){return function(){copyText(b,t)}})(copyBtn,text));
       btns.appendChild(sendBtn);btns.appendChild(copyBtn);
       card.appendChild(tag);card.appendChild(body);card.appendChild(btns);
       rl.appendChild(card);
     });
-    addToHistory(display,{type:typeLabels[selType],voice:voiceMap[selVoice].label,tone:selTone,length:selLength});
+    addToHistory(display,{type:modLabel,mod:curMod});
     document.getElementById('clear-btn').classList.add('show');
   }catch(err){rl.innerHTML='';em.textContent='產生失敗：'+err.message;em.classList.add('show');ra.classList.remove('show')}
   finally{btn.disabled=false;btn.textContent='產生文案'}
 }
 
-function clearResults(){document.getElementById('results-area').classList.remove('show');document.getElementById('results-list').innerHTML='';document.getElementById('history-panel').classList.remove('show');document.getElementById('clear-btn').classList.remove('show');document.querySelectorAll('.sidebar-item').forEach(el=>el.classList.remove('active-item'))}
+function clearResults(){document.getElementById('results-area').classList.remove('show');document.getElementById('results-list').innerHTML='';document.getElementById('history-panel').classList.remove('show');document.getElementById('clear-btn').classList.remove('show');document.querySelectorAll('.nav-hist-item').forEach(function(el){el.classList.remove('active-item')})}
 
-/* ─── Editor ─── */
-function sendToEditor(text){const ta=document.getElementById('editor-textarea');ta.value=text;updateEditorCount();ta.scrollIntoView({behavior:'smooth',block:'center'});ta.focus()}
+/* ── History ── */
+var HIST_KEY='vvd_history';
+function loadHistory(){try{return JSON.parse(localStorage.getItem(HIST_KEY))||[]}catch(e){return[]}}
+function saveHistory(list){localStorage.setItem(HIST_KEY,JSON.stringify(list))}
+function formatTime(ts){var d=new Date(ts);return String(d.getMonth()+1).padStart(2,'0')+'/'+String(d.getDate()).padStart(2,'0')+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')}
+function addToHistory(entries,meta){var list=loadHistory();list.unshift({id:Date.now(),ts:Date.now(),meta:meta,entries:entries});if(list.length>30)list.pop();saveHistory(list);renderNavHist()}
+function renderNavHist(){
+  var list=loadHistory();
+  var el=document.getElementById('nav-hist-list');
+  if(list.length===0){el.innerHTML='<div style="font-size:11px;color:#444;padding:6px 16px">還沒有紀錄</div>';return}
+  el.innerHTML='';
+  list.forEach(function(item,idx){
+    var div=document.createElement('div');div.className='nav-hist-item';
+    div.innerHTML='<div class="nav-hist-tag">'+(item.meta.type||'文案')+'</div><div class="nav-hist-preview">'+((item.entries[0]||'').replace(/</g,'&lt;').slice(0,28))+'</div>';
+    div.addEventListener('click',function(){openHistoryItem(idx)});
+    el.appendChild(div);
+  });
+}
+function openHistoryItem(idx){
+  var list=loadHistory();var item=list[idx];if(!item)return;
+  document.querySelectorAll('.nav-hist-item').forEach(function(el,i){el.classList.toggle('active-item',i===idx)});
+  var panel=document.getElementById('history-panel');
+  document.getElementById('history-panel-label').textContent=(item.meta.type||'文案')+' · '+formatTime(item.ts);
+  var cards=document.getElementById('history-panel-cards');cards.innerHTML='';
+  item.entries.forEach(function(text,i){
+    var card=document.createElement('div');card.className='result-card';card.style.marginBottom='10px';
+    var tag=document.createElement('div');tag.className='result-tag';tag.textContent=(item.meta.type||'文案')+' · 版本 '+(i+1);
+    var body=document.createElement('div');body.className='result-text';body.textContent=text;
+    var btns=document.createElement('div');btns.className='result-card-btns';
+    var sendBtn=document.createElement('button');sendBtn.className='send-editor-btn';sendBtn.textContent='送入編輯區';
+    sendBtn.addEventListener('click',(function(t){return function(){sendToEditor(t)}})(text));
+    var copyBtn=document.createElement('button');copyBtn.className='copy-btn';copyBtn.textContent='複製';
+    copyBtn.addEventListener('click',(function(b,t){return function(){copyText(b,t)}})(copyBtn,text));
+    btns.appendChild(sendBtn);btns.appendChild(copyBtn);card.appendChild(tag);card.appendChild(body);card.appendChild(btns);cards.appendChild(card);
+  });
+  panel.classList.add('show');panel.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function closeHistoryPanel(){document.getElementById('history-panel').classList.remove('show');document.querySelectorAll('.nav-hist-item').forEach(function(el){el.classList.remove('active-item')})}
+function clearHistory(){if(!confirm('確定要清除所有歷史紀錄？'))return;localStorage.removeItem(HIST_KEY);renderNavHist();closeHistoryPanel()}
+
+/* ── Editor ── */
+function sendToEditor(text){var ta=document.getElementById('editor-textarea');ta.value=text;updateEditorCount();ta.scrollIntoView({behavior:'smooth',block:'center'});ta.focus()}
 function clearEditor(){document.getElementById('editor-textarea').value='';updateEditorCount()}
 function updateEditorCount(){document.getElementById('editor-char-count').textContent=document.getElementById('editor-textarea').value.length+' 字'}
-function copyEditor(){const text=document.getElementById('editor-textarea').value;if(!text.trim())return;navigator.clipboard.writeText(text).then(()=>{const btn=document.querySelector('.editor-copy-btn');btn.textContent='已複製';setTimeout(()=>{btn.textContent='複製全文'},2000)})}
-function copyText(btn,text){navigator.clipboard.writeText(text).then(()=>{btn.textContent='已複製';btn.classList.add('copied');setTimeout(()=>{btn.textContent='複製';btn.classList.remove('copied')},2000)})}
+function copyEditor(){var text=document.getElementById('editor-textarea').value;if(!text.trim())return;navigator.clipboard.writeText(text).then(function(){var btn=document.querySelector('.editor-copy-btn');btn.textContent='已複製';setTimeout(function(){btn.textContent='複製全文'},2000)})}
+function copyText(btn,text){navigator.clipboard.writeText(text).then(function(){btn.textContent='已複製';btn.classList.add('copied');setTimeout(function(){btn.textContent='複製';btn.classList.remove('copied')},2000)})}
 
-/* ─── Emoji / Symbol / Kaomoji ─── */
-document.getElementById('emoji-cats').querySelectorAll('.emoji-cat').forEach(cat=>{
-  cat.addEventListener('click',()=>{
-    document.querySelectorAll('.emoji-cat').forEach(c=>c.classList.remove('active'));
-    document.querySelectorAll('.emoji-grid,.sym-grid,.kao-grid').forEach(g=>g.classList.remove('active'));
-    cat.classList.add('active');
-    document.getElementById(cat.dataset.cat).classList.add('active');
-  });
-});
-document.querySelectorAll('.e-char').forEach(el=>el.addEventListener('click',()=>insertAtCursor(el.textContent)));
-document.querySelectorAll('.sym-char').forEach(el=>el.addEventListener('click',()=>insertAtCursor(el.textContent.replace(/\s/g,''))));
-document.querySelectorAll('.kao').forEach(el=>el.addEventListener('click',()=>insertAtCursor(el.textContent)));
+/* ── Emoji ── */
+document.getElementById('emoji-cats').querySelectorAll('.emoji-cat').forEach(function(cat){cat.addEventListener('click',function(){document.querySelectorAll('.emoji-cat').forEach(function(c){c.classList.remove('active')});document.querySelectorAll('.emoji-grid,.sym-grid,.kao-grid').forEach(function(g){g.classList.remove('active')});cat.classList.add('active');document.getElementById(cat.dataset.cat).classList.add('active')})});
+document.querySelectorAll('.e-char').forEach(function(el){el.addEventListener('click',function(){insertAtCursor(el.textContent)})});
+document.querySelectorAll('.sym-char').forEach(function(el){el.addEventListener('click',function(){insertAtCursor(el.textContent.replace(/\u3000/g,''))})});
+document.querySelectorAll('.kao').forEach(function(el){el.addEventListener('click',function(){insertAtCursor(el.textContent)})});
 document.getElementById('editor-textarea').addEventListener('input',updateEditorCount);
 
-/* ─── Init ─── */
-window.addEventListener('load',()=>{
+/* ── Init ── */
+window.addEventListener('load',function(){
   document.getElementById('product-name').placeholder=randomFrom(productPlaceholders);
   document.getElementById('extra-info').placeholder=randomFrom(extraPlaceholders);
-  const k=localStorage.getItem('vvd_key');
+  var k=localStorage.getItem('vvd_key');
   if(k){document.getElementById('api-key').value=k;showKeySaved()}
-  const t=localStorage.getItem('vvd_theme');
-  if(t){document.body.className=t;document.querySelectorAll('.theme-swatch').forEach(s=>s.classList.toggle('active',s.dataset.theme===t))}
-  renderSidebar();
+  var t=localStorage.getItem('vvd_theme');
+  if(t){document.body.className=t;document.querySelectorAll('.theme-swatch').forEach(function(s){s.classList.toggle('active',s.dataset.theme===t)})}
+  renderNavHist();
 });
 </script>
 </body>
