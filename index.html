@@ -691,7 +691,7 @@ select option{background:var(--bg2);color:var(--text)}
 <script>
 /* ── Password ── */
 (function(){
-  var PW='YOUR_PASSWORD_HERE';var SK='vvd_auth';
+  var PW='85078507';var SK='vvd_auth';
   function checkPw(){var v=document.getElementById('pw-input').value;if(v===PW){sessionStorage.setItem(SK,'1');var o=document.getElementById('pw-overlay');o.classList.add('hide');setTimeout(function(){o.remove()},350)}else{document.getElementById('pw-err').textContent='密碼錯誤，請再試一次';document.getElementById('pw-input').value='';document.getElementById('pw-input').focus()}}
   window.checkPw=checkPw;
   document.addEventListener('DOMContentLoaded',function(){if(sessionStorage.getItem(SK)==='1'){var o=document.getElementById('pw-overlay');if(o)o.remove();return}document.getElementById('pw-input').addEventListener('keydown',function(e){if(e.key==='Enter')checkPw()})});
